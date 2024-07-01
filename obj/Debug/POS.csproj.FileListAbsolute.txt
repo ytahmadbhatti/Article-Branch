@@ -1,0 +1,205 @@
+F:\Shop POS\POS\obj\Debug\POS.csproj.AssemblyReference.cache
+F:\Shop POS\POS\obj\Debug\POS.Properties.Resources.resources
+F:\Shop POS\POS\obj\Debug\POS.csproj.GenerateResource.cache
+F:\Shop POS\POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
+F:\Shop POS\POS\bin\Debug\POS.exe.config
+F:\Shop POS\POS\bin\Debug\POS.exe
+F:\Shop POS\POS\bin\Debug\POS.pdb
+F:\Shop POS\POS\obj\Debug\POS.exe
+F:\Shop POS\POS\obj\Debug\POS.pdb
+F:\Shop POS\POS\obj\Debug\POS.Login.resources
+F:\Shop POS\POS\obj\Debug\POS.Main.Main.resources
+F:\Shop POS\POS\obj\Debug\POS.Forms.frmPartyCoding.resources
+F:\Shop POS\POS\obj\Debug\POS.Forms.frmProduct.resources
+F:\Shop POS\POS\obj\Debug\POS.Forms.frmPurchase.resources
+C:\Users\Online\OneDrive\Desktop\Shop-POS\bin\Debug\POS.exe.config
+C:\Users\Online\OneDrive\Desktop\Shop-POS\bin\Debug\POS.exe
+C:\Users\Online\OneDrive\Desktop\Shop-POS\bin\Debug\POS.pdb
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.csproj.AssemblyReference.cache
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.Forms.frmPurchase.resources
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.Forms.frmPartyCoding.resources
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.Login.resources
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.Main.Main.resources
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.Properties.Resources.resources
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.csproj.GenerateResource.cache
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.exe
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.pdb
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.Forms.frmSale.resources
+C:\Users\Online\OneDrive\Desktop\Shop-POS\obj\Debug\POS.Forms.frmProductCoding.resources
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.csproj.AssemblyReference.cache
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.Forms.frmPurchase.resources
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.Forms.frmProductCoding.resources
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.Forms.frmSale.resources
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.Login.resources
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.Main.Main.resources
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.Properties.Resources.resources
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.F1SearchForm.frmSearchParty.resources
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.csproj.GenerateResource.cache
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
+F:\Github\POS-Shoes\Shop-POS\bin\Debug\POS.exe.config
+F:\Github\POS-Shoes\Shop-POS\bin\Debug\POS.exe
+F:\Github\POS-Shoes\Shop-POS\bin\Debug\POS.pdb
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.exe
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.pdb
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.Forms.frmPartyCoding.resources
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.F1SearchForm.frmSearchProduct.resources
+F:\Github\POS-Shoes\Shop-POS\obj\Debug\POS.F1SearchForm.frmSearchPurchase.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\bin\Debug\POS.exe.config
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\bin\Debug\POS.exe
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\bin\Debug\POS.pdb
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.csproj.AssemblyReference.cache
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.F1SearchForm.frmSearchProduct.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.F1SearchForm.frmSearchPurchase.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.Forms.frmPurchase.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.Forms.frmPartyCoding.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.Forms.frmSale.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.Login.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.Main.Main.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.Properties.Resources.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.F1SearchForm.frmSearchParty.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.csproj.GenerateResource.cache
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.csproj.CoreCompileInputs.cache
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.exe
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.pdb
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.Forms.frmProduct.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\obj\Debug\POS.Forms.frmSizeCoding.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\POS.pdb
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\POS.exe.config
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\POS.exe
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.csproj.AssemblyReference.cache
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchProduct.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchPurchase.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Forms.frmProduct.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Forms.frmPurchase.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Forms.frmPartyCoding.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Forms.frmPurchaseReturn.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Forms.frmSale.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Forms.frmSizeCoding.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Login.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Main.Main.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Properties.Resources.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchParty.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.csproj.GenerateResource.cache
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.csproj.CoreCompileInputs.cache
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.csproj.Up2Date
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.exe
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.pdb
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptPurchaseBetweenDate.rpt
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptSaleInv3Inch.rpt
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptPurchaseReturnInv.rpt
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptPurchase.rpt
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptPurchaseBetweenDate.cs
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptSaleInv3Inch.cs
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptPurchaseReturnInv.cs
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptPurchase.cs
+F:\Github\POS-ShoesShop\bin\Debug\POS.exe.config
+F:\Github\POS-ShoesShop\bin\Debug\POS.exe
+F:\Github\POS-ShoesShop\bin\Debug\POS.pdb
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.Shared.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\Github\POS-ShoesShop\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\Github\POS-ShoesShop\bin\Debug\stdole.dll
+F:\Github\POS-ShoesShop\obj\Debug\POS.csproj.AssemblyReference.cache
+F:\Github\POS-ShoesShop\obj\Debug\POS.F1SearchForm.frmSearchProduct.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.F1SearchForm.frmSearchSaleReturn.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.F1SearchForm.frmSearchSale.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.F1SearchForm.frmSearchPurchaseReturn.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.F1SearchForm.frmSearchPurchase.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Forms.frmProduct.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Forms.frmPurchase.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Forms.frmPartyCoding.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Forms.frmSaleReturn.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Forms.frmPurchaseReturn.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Forms.frmSale.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Forms.frmSizeCoding.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Forms.frmUser.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Login.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Main.Main.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Properties.Resources.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.F1SearchForm.frmSearchParty.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Report_Form.ReportForm.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.Report.ReportViewer.resources
+F:\Github\POS-ShoesShop\obj\Debug\POS.csproj.GenerateResource.cache
+F:\Github\POS-ShoesShop\obj\Debug\POS.csproj.CoreCompileInputs.cache
+F:\Github\POS-ShoesShop\obj\Debug\POS.csproj.Up2Date
+F:\Github\POS-ShoesShop\obj\Debug\POS.exe
+F:\Github\POS-ShoesShop\obj\Debug\POS.pdb
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptSaleBetweenDate.rpt
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptSaleBetweenDate.cs
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptPurchaseReturnBetweenDate.rpt
+F:\Github\POS-ShoesShop\bin\Debug\Report\rptPurchaseReturnBetweenDate.cs
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptPurchaseReturnBetweenDate.rpt
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptSaleInvBetweenDate.rpt
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptPurchaseBetweenDate.rpt
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptSaleInv3Inch.rpt
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptPurchaseReturnInv.rpt
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptPurchase.rpt
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptPurchaseReturnBetweenDate.cs
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptSaleInvBetweenDate.cs
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptPurchaseBetweenDate.cs
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptSaleInv3Inch.cs
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptPurchaseReturnInv.cs
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\Report\rptPurchase.cs
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\bin\Debug\stdole.dll
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchSaleReturn.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchSale.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchPurchaseReturn.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Forms.frmSaleReturn.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Forms.frmUser.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Report_Form.ReportForm.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\POS-Shop\POS-Shoes\obj\Debug\POS.Report.ReportViewer.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.csproj.AssemblyReference.cache
+C:\New Branch\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchSaleReturn.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchSale.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchPurchaseReturn.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchPurchase.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Forms.frmProduct.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Forms.frmPurchase.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Forms.frmPartyCoding.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Forms.frmSaleReturn.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Forms.frmPurchaseReturn.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Forms.frmSale.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Forms.frmSizeCoding.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Forms.frmUser.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Login.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Main.Main.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Properties.Resources.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchParty.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Report_Form.ReportForm.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.Report.ReportViewer.resources
+C:\New Branch\POS-Shoes\obj\Debug\POS.csproj.GenerateResource.cache
+C:\New Branch\POS-Shoes\obj\Debug\POS.csproj.CoreCompileInputs.cache
+C:\New Branch\POS-Shoes\obj\Debug\POS.exe
+C:\New Branch\POS-Shoes\obj\Debug\POS.pdb
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptPurchaseReturnBetweenDate.rpt
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptSaleInvBetweenDate.rpt
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptPurchaseBetweenDate.rpt
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptSaleInv3Inch.rpt
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptPurchaseReturnInv.rpt
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptPurchase.rpt
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptPurchaseReturnBetweenDate.cs
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptSaleInvBetweenDate.cs
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptPurchaseBetweenDate.cs
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptSaleInv3Inch.cs
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptPurchaseReturnInv.cs
+C:\New Branch\POS-Shoes\bin\Debug\Report\rptPurchase.cs
+C:\New Branch\POS-Shoes\bin\Debug\POS.exe.config
+C:\New Branch\POS-Shoes\bin\Debug\POS.exe
+C:\New Branch\POS-Shoes\bin\Debug\POS.pdb
+C:\New Branch\POS-Shoes\bin\Debug\stdole.dll
+C:\New Branch\POS-Shoes\obj\Debug\POS.csproj.Up2Date
+C:\New Branch\POS-Shoes\obj\Debug\POS.F1SearchForm.frmSearchArticle.resources
