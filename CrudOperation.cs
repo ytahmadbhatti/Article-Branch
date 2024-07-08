@@ -34,7 +34,7 @@ namespace POS
             return dt;
         }
 
-        public bool CheckName(SqlConnection con, string Table, string PartyName)
+        public bool CheckName(SqlConnection con, string Table, string name)
         {
             if (con.State != ConnectionState.Open)
             {
@@ -42,7 +42,7 @@ namespace POS
             }
             if (Table == "Partynfo")
             {
-                SqlCommand cmd = new SqlCommand("Select PartyName from PartyInfo where PartyName='" + PartyName + "'and IsDeleted != 1", con);
+                SqlCommand cmd = new SqlCommand("Select PartyName from PartyInfo where PartyName='" + name + "'and IsDeleted != 1", con);
                 string Name = Convert.ToString(cmd.ExecuteScalar());
                 if (Name == "" || Name == null)
                 {
@@ -55,7 +55,7 @@ namespace POS
             }
             else if (Table == "ArticleInfo")
             {
-                    SqlCommand cmd = new SqlCommand("Select Article from ArticleInfo where Article='" + PartyName + "'and IsDeleted != 1", con);
+                    SqlCommand cmd = new SqlCommand("Select Article from ArticleInfo where Article='" + name + "'and IsDeleted != 1", con);
                     string Name = Convert.ToString(cmd.ExecuteScalar());
                     if (Name == "" || Name == null)
                     {
@@ -68,7 +68,7 @@ namespace POS
             }
             else if (Table == "SizeInfo")
             {
-                SqlCommand cmd = new SqlCommand("Select Size from SizeInfo where Size='" + PartyName + "'and IsDeleted != 1", con);
+                SqlCommand cmd = new SqlCommand("Select Size from SizeInfo where Size='" + name + "'and IsDeleted != 1", con);
                 string Name = Convert.ToString(cmd.ExecuteScalar());
                 if (Name == "" || Name == null)
                 {
@@ -81,7 +81,7 @@ namespace POS
             }
             else if (Table == "[User]")
             {
-                SqlCommand cmd = new SqlCommand("Select UserName from [User] where UserName='" + PartyName + "'and IsActive != 0", con);
+                SqlCommand cmd = new SqlCommand("Select UserName from [User] where UserName='" + name + "'and IsActive != 0", con);
                 string Name = Convert.ToString(cmd.ExecuteScalar());
                 if (Name == "" || Name == null)
                 {
@@ -92,7 +92,20 @@ namespace POS
                     return true;
                 }
             }
-
+            else if (Table == "ExpenseCoding")
+            {
+                SqlCommand cmd = new SqlCommand("Select Type from ExpenseCoding where " +
+                    "Type='" + name + "'and IsDeleted != 1", con);
+                string Name = Convert.ToString(cmd.ExecuteScalar());
+                if (Name == "" || Name == null)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
             return true;
         }
         public string GetMaxIdentity(SqlConnection con, string Table)
@@ -197,6 +210,37 @@ namespace POS
 
             return dt;
         }
+
+        public DataTable GetExpenseCodingData(SqlConnection con)
+        {
+            SqlCommand cmd = new SqlCommand("Select ID,Type from ExpenseCoding where IsDeleted =0 order by ID", con);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            return dt;
+        }
+
+        public DataTable GetExpenseData(SqlConnection con)
+        {
+            SqlCommand cmd = new SqlCommand("Select ID,Date, Purpose, Description from Expense where IsDeleted =0 order by ID", con);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            return dt;
+        }
+
+        public DataTable GetPartyPaymentData(SqlConnection con)
+        {
+            SqlCommand cmd = new SqlCommand("Select VoucherID,VoucherDate, PartyID, Amount, Discritipn from Vouchers where IsDeleted =0 order by VoucherID", con);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            return dt;
+        }
+
         public void InsertUpdatePartyInfo(SqlConnection Con, int partyCode, string PartyName, string Location,
             string Contact, bool IsUpdate)
         {
@@ -259,7 +303,7 @@ namespace POS
         public string GetSalePrice(SqlConnection Con, string Article)
         {
             string SaleRate = "0";
-            SqlCommand cmd = new SqlCommand("Select top 1 Rate from PurchaseDetail where article= '"+Article+"' order by PurchaseDate desc", Con);
+            SqlCommand cmd = new SqlCommand("Select top 1 UnitPrice from PurchaseDetail where article= '" + Article+"' order by PurchaseDate desc", Con);
             object result = cmd.ExecuteScalar();
             if (result != null && result != DBNull.Value)
             {
@@ -403,7 +447,59 @@ namespace POS
             cmd.Parameters.Add("@IsActive", SqlDbType.Bit).Value = 0;
             cmd.ExecuteNonQuery();
         }
-        
 
+        public void InsertUpdateExpenseCoding(SqlConnection Con, int Id, string type, bool IsUpdate)
+        {
+            SqlCommand cmd = new SqlCommand("InsertUpdateExpenseCoding", Con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@ID", SqlDbType.Int).Value = Id;
+            cmd.Parameters.Add("@Type", SqlDbType.NVarChar).Value = type;
+            cmd.Parameters.Add("@IsUpdate", SqlDbType.Bit).Value = IsUpdate;
+            cmd.ExecuteNonQuery();
+        }
+
+        public void DeleteExpenseCoding(SqlConnection Con, int id)
+        {
+            SqlCommand cmd = new SqlCommand("DeleteExpenseCoding", Con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@ID", SqlDbType.Int).Value = id;
+            cmd.Parameters.Add("@IsDelete", SqlDbType.Bit).Value = 1;
+            cmd.ExecuteNonQuery();
+        }
+
+        public void InsertUpdateExpense(SqlConnection Con, int Id, DateTime date, string purpose, string description, bool IsUpdate)
+        {
+            SqlCommand cmd = new SqlCommand("InsertUpdateExpense", Con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@ID", SqlDbType.Int).Value = Id;
+            cmd.Parameters.Add("@Date", SqlDbType.DateTime).Value = date;
+            cmd.Parameters.Add("@Purpose", SqlDbType.NVarChar).Value = purpose;
+            cmd.Parameters.Add("@Description", SqlDbType.NVarChar).Value = description;
+            cmd.Parameters.Add("@IsUpdate", SqlDbType.Bit).Value = IsUpdate;
+            cmd.ExecuteNonQuery();
+        }
+        public void DeleteExpense(SqlConnection Con, int id)
+        {
+            SqlCommand cmd = new SqlCommand("DeleteExpense", Con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@ID", SqlDbType.Int).Value = id;
+            cmd.Parameters.Add("@IsDelete", SqlDbType.Bit).Value = 1;
+            cmd.ExecuteNonQuery();
+        }
+
+        public string CalculatePendingAmount(SqlConnection Con, string partycode)
+        {
+            string pendingamount = "0";
+            SqlCommand cmd = new SqlCommand("CalculatePendingAmount", Con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@PartyCode", SqlDbType.NVarChar).Value = partycode;
+
+            object result = cmd.ExecuteScalar();
+            if (result != null && result != DBNull.Value)
+            {
+                pendingamount = result.ToString();
+            }
+            return pendingamount;
+        }
     }
 }

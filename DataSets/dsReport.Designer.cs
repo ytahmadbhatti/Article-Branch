@@ -379,7 +379,7 @@ namespace POS.DataSets {
             
             private global::System.Data.DataColumn columnDiscount;
             
-            private global::System.Data.DataColumn columnDataColumn3;
+            private global::System.Data.DataColumn columnUnitPrice;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -536,9 +536,9 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DataColumn3Column {
+            public global::System.Data.DataColumn UnitPriceColumn {
                 get {
-                    return this.columnDataColumn3;
+                    return this.columnUnitPrice;
                 }
             }
             
@@ -595,7 +595,7 @@ namespace POS.DataSets {
                         int Pair, 
                         string Size, 
                         string Discount, 
-                        string DataColumn3) {
+                        decimal UnitPrice) {
                 PurchaseInvRow rowPurchaseInvRow = ((PurchaseInvRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PurchaseId,
@@ -613,7 +613,7 @@ namespace POS.DataSets {
                         Pair,
                         Size,
                         Discount,
-                        DataColumn3};
+                        UnitPrice};
                 rowPurchaseInvRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPurchaseInvRow);
                 return rowPurchaseInvRow;
@@ -651,7 +651,7 @@ namespace POS.DataSets {
                 this.columnPair = base.Columns["Pair"];
                 this.columnSize = base.Columns["Size"];
                 this.columnDiscount = base.Columns["Discount"];
-                this.columnDataColumn3 = base.Columns["DataColumn3"];
+                this.columnUnitPrice = base.Columns["UnitPrice"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -687,8 +687,8 @@ namespace POS.DataSets {
                 base.Columns.Add(this.columnSize);
                 this.columnDiscount = new global::System.Data.DataColumn("Discount", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDiscount);
-                this.columnDataColumn3 = new global::System.Data.DataColumn("DataColumn3", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDataColumn3);
+                this.columnUnitPrice = new global::System.Data.DataColumn("UnitPrice", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUnitPrice);
                 this.columnSaleMen.Caption = "DataColumn1";
                 this.columnPartyCode.Caption = "DataColumn2";
                 this.columnPartyName.Caption = "DataColumn3";
@@ -1998,17 +1998,17 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string DataColumn3 {
+            public decimal UnitPrice {
                 get {
                     try {
-                        return ((string)(this[this.tablePurchaseInv.DataColumn3Column]));
+                        return ((decimal)(this[this.tablePurchaseInv.UnitPriceColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn3\' in table \'PurchaseInv\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'UnitPrice\' in table \'PurchaseInv\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePurchaseInv.DataColumn3Column] = value;
+                    this[this.tablePurchaseInv.UnitPriceColumn] = value;
                 }
             }
             
@@ -2194,14 +2194,14 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsDataColumn3Null() {
-                return this.IsNull(this.tablePurchaseInv.DataColumn3Column);
+            public bool IsUnitPriceNull() {
+                return this.IsNull(this.tablePurchaseInv.UnitPriceColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetDataColumn3Null() {
-                this[this.tablePurchaseInv.DataColumn3Column] = global::System.Convert.DBNull;
+            public void SetUnitPriceNull() {
+                this[this.tablePurchaseInv.UnitPriceColumn] = global::System.Convert.DBNull;
             }
         }
         

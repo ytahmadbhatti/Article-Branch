@@ -240,7 +240,8 @@ namespace POS.Forms
                     txtArticle.Text = selectedRow.Cells[0].Value.ToString();
                     txtPair.Text = selectedRow.Cells[1].Value.ToString();
                     txtTotalPurchase.Text = selectedRow.Cells[2].Value.ToString();
-                    txtDiscount.Text = selectedRow.Cells[3].Value.ToString();
+                    int disc = Convert.ToInt32(selectedRow.Cells[3].Value);
+                    txtDiscount.Text = Convert.ToString(disc);
                     txtNetAmount.Text = selectedRow.Cells[4].Value.ToString();
 
                     dgvPurchase.Rows.Remove(selectedRow);
@@ -524,7 +525,7 @@ namespace POS.Forms
                     reader.Close();
 
                  string qry2 = @"SELECT  PurchaseDetailId,PurchaseId,Article,Discount, Pair,Rate,NetAmount,
-                 PurchaseDate FROM PurchaseDetail where PurchaseId= '" + txtPurchaseInv.Text +"' order by PurchaseId";
+                 PurchaseDate,UnitPrice FROM PurchaseDetail where PurchaseId= '" + txtPurchaseInv.Text +"' order by PurchaseId";
                     SqlCommand cmd2 = new SqlCommand(qry2, Co);
                     SqlDataReader reader2;
                     reader2 = cmd2.ExecuteReader();
@@ -542,6 +543,7 @@ namespace POS.Forms
                                     dgvPurchase.Rows.Add(
                                         reader2["Article"].ToString(),
                                         quantityInt,
+                                        reader2["UnitPrice"].ToString(),
                                         reader2["Rate"].ToString(),
                                          reader2["Discount"].ToString(),
                                         reader2["NetAmount"].ToString()

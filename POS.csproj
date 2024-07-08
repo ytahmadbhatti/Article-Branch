@@ -99,6 +99,18 @@
     <Compile Include="Forms\frmArticle.Designer.cs">
       <DependentUpon>frmArticle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmExpense.Designer.cs">
+      <DependentUpon>frmExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmExpenseCoding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmExpenseCoding.Designer.cs">
+      <DependentUpon>frmExpenseCoding.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmPurchase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +153,12 @@
     <Compile Include="Forms\frmUser.Designer.cs">
       <DependentUpon>frmUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmPartyPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPartyPayment.Designer.cs">
+      <DependentUpon>frmPartyPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="FunctionClasses\SearchForm.cs" />
     <Compile Include="Login\frmLogin.cs">
       <SubType>Form</SubType>
@@ -162,12 +180,10 @@
     <Compile Include="F1SearchForm\frmSearchParty.Designer.cs">
       <DependentUpon>frmSearchParty.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report Form\ReportForm.cs">
+    <Compile Include="Reports Form\ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report Form\ReportForm.Designer.cs">
-      <DependentUpon>ReportForm.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Reports Form\ReportForm.Designer.cs" />
     <Compile Include="ReportsOperation.cs" />
     <Compile Include="Report\ReportViewer.cs">
       <SubType>Form</SubType>
@@ -235,6 +251,12 @@
     <EmbeddedResource Include="Forms\frmArticle.resx">
       <DependentUpon>frmArticle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExpense.resx">
+      <DependentUpon>frmExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExpenseCoding.resx">
+      <DependentUpon>frmExpenseCoding.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPurchase.resx">
       <DependentUpon>frmPurchase.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +278,9 @@
     <EmbeddedResource Include="Forms\frmUser.resx">
       <DependentUpon>frmUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPartyPayment.resx">
+      <DependentUpon>frmPartyPayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,9 +300,7 @@
     <EmbeddedResource Include="F1SearchForm\frmSearchParty.resx">
       <DependentUpon>frmSearchParty.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report Form\ReportForm.resx">
-      <DependentUpon>ReportForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Form\ReportForm.resx" />
     <EmbeddedResource Include="Report\ReportViewer.resx">
       <DependentUpon>ReportViewer.cs</DependentUpon>
     </EmbeddedResource>

@@ -59,11 +59,11 @@ namespace POS.Forms
             dgvSale.ScrollBars = ScrollBars.Both;
 
             dgvSale.ColumnCount = 6;
-            dgvSale.Columns[0].Name = "Product Code";
-            dgvSale.Columns[1].Name = "Product";
-            dgvSale.Columns[2].Name = "Size";
-            dgvSale.Columns[3].Name = "Quantity";
-            dgvSale.Columns[4].Name = "Sale Rate";
+            dgvSale.Columns[0].Name = "Article";
+            dgvSale.Columns[1].Name = "Pair";
+            dgvSale.Columns[2].Name = "Sale Rate";
+            dgvSale.Columns[3].Name = "Total Sale Rate";
+            dgvSale.Columns[4].Name = "Discount";
             dgvSale.Columns[5].Name = "Net Amount";
         }
 
@@ -111,9 +111,9 @@ namespace POS.Forms
             if (e.KeyCode == Keys.Enter)
             {
             
-                txtStock.Text = "";
-                txtNetAmount.Text = "";
-                e.SuppressKeyPress = true;
+  
+
+
                 if (txtArticle.Text != "")
                 {
                     SearchForm search = new SearchForm();
@@ -121,6 +121,7 @@ namespace POS.Forms
                     if (Data.Rows.Count > 0)
                     {
                         txtArticle.Text = Data.Rows[0]["Article"].ToString();
+                        e.SuppressKeyPress = true;
                         txtPair.Focus();
                     }
                     else
@@ -180,37 +181,17 @@ namespace POS.Forms
                 }
                 else
                 {
-                    string productCode = txtArticle.Text;
-                    bool found = false;
-                    int rowIndex = -1;
-
-                    for (int i = 0; i < dgvSale.Rows.Count; i++)
-                    {
-                        if (dgvSale.Rows[i].Cells[0].Value != null &&
-                            dgvSale.Rows[i].Cells[0].Value.ToString() == productCode)
-                        {
-                            found = true;
-                            rowIndex = i;
-                            break;
-                        }
-                    }
-                    if (found)
-                    {
-                        
-                        dgvSale.Rows[rowIndex].Cells[3].Value = txtPair.Text;
-                        dgvSale.Rows[rowIndex].Cells[4].Value = txtSaleRate.Text;
-                        dgvSale.Rows[rowIndex].Cells[5].Value = txtNetAmount.Text;
-                    }
-                    else
-                    {
+                    string article = txtArticle.Text;
+                   
                         int newRowIndex = dgvSale.Rows.Add(
-                            productCode,
-                         
+                            article,
                             txtPair.Text,
                             txtSaleRate.Text,
+                            txtTotalSale.Text,
+                            txtDiscount.Text,
                             txtNetAmount.Text
                         );
-                    }
+                    
                     double totalAmount = 0.0;
                     foreach (DataGridViewRow row in dgvSale.Rows)
                     {
@@ -220,12 +201,13 @@ namespace POS.Forms
                             totalAmount += netAmount;
                         }
                     }
-                    txtAmount.Text = totalAmount.ToString();
+                    txtAmount.Text =Convert.ToDecimal(totalAmount).ToString();
                    
                     txtPair.Text = "";
                     txtSaleRate.Text = "";
                     txtNetAmount.Text = "";
-                
+                    txtTotalSale.Text = "";
+                    txtDiscount.Text = "";
                     txtStock.Text = "";
                     txtArticle.Text = "";
                     txtArticle.Focus();
@@ -543,7 +525,7 @@ namespace POS.Forms
             if (Keys.Enter == e.KeyCode)
             {
                 e.SuppressKeyPress = true;
-               txtNetAmount.Focus();
+               txtDiscount.Focus();
             }
         }
 
@@ -614,7 +596,7 @@ namespace POS.Forms
                 if (txtArticle.Text != "")
                 {
                     txtStock.Text = crud.GetStock(Co, txtArticle.Text);
-                   txtSaleRate.Text = crud.GetSalePrice(Co, txtArticle.Text);
+                    txtSaleRate.Text = crud.GetSalePrice(Co, txtArticle.Text);
 
                 }
             }
@@ -659,18 +641,25 @@ namespace POS.Forms
 
         private void txtDiscount_TextChanged(object sender, EventArgs e)
         {
+            
             if (txtTotalSale.Text != "" && txtDiscount.Text != "")
             {
+                
                 decimal TotalPurchase = Convert.ToDecimal(txtTotalSale.Text);
                 decimal Discount = Convert.ToInt32(txtDiscount.Text);
                 decimal DiscountRupee = ((TotalPurchase * Discount) / 100);
                 txtNetAmount.Text = (TotalPurchase - DiscountRupee).ToString();
             }
-            else
+           
+        }
+
+        private void txtDiscount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
             {
-                Decimal salerate = Convert.ToDecimal(txtSaleRate.Text);
-                int guantity = Convert.ToInt32(txtPair.Text);
-                txtTotalSale.Text = (salerate * guantity).ToString();
+
+                e.SuppressKeyPress = true;
+                btnAdd.Focus();
             }
         }
     }

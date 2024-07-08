@@ -135,5 +135,23 @@ namespace POS.Main
             ReportForm frm = new ReportForm();
             frm.ShowDialog();
         }
+
+        private void patyPaymentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPartyPayment frm = new frmPartyPayment();
+            frm.Show();
+        }
+
+        private void expenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmExpense frm = new frmExpense();
+            frm.Show();
+        }
+
+        private void expenseCodingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmExpenseCoding frm = new frmExpenseCoding();
+            frm.Show();
+        }
     }
 }

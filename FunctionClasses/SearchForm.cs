@@ -48,6 +48,18 @@ namespace POS.FunctionClasses
                     cmd = new SqlCommand(qry, Co);
                     cmd.Parameters.AddWithValue("@Code", Code);
                 }
+                else if (Table == "ExpenseCoding")
+                {
+                    qry = @"select ID,Type from " + Table.Trim() + "" + " where ID='" + Code + "' and ISNULL(IsDeleted,0) =0  ";
+                    cmd = new SqlCommand(qry, Co);
+                    cmd.Parameters.AddWithValue("@Code", Code);
+                }
+                else if (Table == "Expense")
+                {
+                    qry = @"select ID,Date, Purpose, Description from " + Table.Trim() + "" + " where ID='" + Code + "' and ISNULL(IsDeleted,0) =0  ";
+                    cmd = new SqlCommand(qry, Co);
+                    cmd.Parameters.AddWithValue("@Code", Code);
+                }
                 if (cmd != null)
                 {
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))

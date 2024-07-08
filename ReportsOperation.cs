@@ -14,8 +14,8 @@ namespace POS
         {
             SqlDataAdapter adp = new SqlDataAdapter(@"SELECT  PM.PurchaseId,PM.PurchaseDate, PM.SaleMen
       ,PM.PartyCode,PM.PartyName,PM.TotalAmount,PD.PurchaseDetailId,PD.Article
-      ,PD.[Pair],PD.[Rate],PD.[Discount],PD.NetAmount
-       FROM PurchaseMaster PM inner join PurchaseDetail PD on PD.PurchaseId=PM.PurchaseId 
+      ,PD.[Pair],PD.[Rate],PD.[Discount],PD.NetAmount,PD.UnitPrice
+       FROM PurchaseMaster PM inner join PurchaseDetail PD on PD.PurchaseId=PM.PurchaseId  
        where PM.PurchaseId='" + purchaseInv+"'", con);
             adp.Fill(dsPurchase, "PurchaseInv");
         }
