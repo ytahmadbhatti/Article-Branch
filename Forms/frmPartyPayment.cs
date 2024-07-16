@@ -21,7 +21,7 @@ namespace POS.Forms
         {
             InitializeComponent();
             Initiatefields();
-            GetPartyName();
+          //  GetPartyName();
         }
         public void Initiatefields()
         {
@@ -32,27 +32,52 @@ namespace POS.Forms
             txtAmount.Text = string.Empty;
             txtAmountRemaining.Text = string.Empty;
             txtDiscription.Text = string.Empty;
-            txtSearch.Text = string.Empty;
+
             Co = cs.GenaricConnection();
             txtVoucherID.Text = CRUD.GetMaxIdentity(Co, "Vouchers");
+            fillComboBox(cbPartyName,"PartyCode", "PartyName", "select PartyCode, PartyName from PartyInfo where IsDeleted='0' Order By PartyCode");
+
             txtVoucherID.ReadOnly = true;
             btnSearch.Text = "Search";
             btnClear.Text = "Cancel";
             IsUpdate = false;
             txtPartyID.Focus();
-            dgvPartyPayment.Show();
-            txtSearch.Show();
-            dgvPartyPayment.Refresh();
-            DataTable dt = new DataTable();
-            dt = CRUD.GetPartyPaymentData(Co);
-            dgvPartyPayment.DataSource = dt;
+       
         }
+
+        private void fillComboBox(ComboBox comboName, string value, string display, string qry)
+        {
+            try
+            {
+                DataRow dr;
+
+                SqlConnection Co = cs.GenaricConnection();
+                if (Co.State != ConnectionState.Open)
+                    Co.Open();
+                SqlCommand cmd = new SqlCommand(qry, Co);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                dr = dt.NewRow();
+                dt.Rows.InsertAt(dr, 0);
+                comboName.ValueMember = value;
+                comboName.DisplayMember = display;
+                comboName.DataSource = dt;
+                Co.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
 
         public void GetPartyName()
         {
             try
             {
-                using (SqlConnection connection = new Connection().GenaricConnection()) // Using your GenaricConnection method
+                using (SqlConnection connection = new Connection().GenaricConnection()) 
                 using (SqlCommand command = new SqlCommand("select PartyCode, PartyName from PartyInfo where IsDeleted != 1", connection))
                 {
                     SqlDataAdapter objDataAdapter = new SqlDataAdapter(command);
@@ -76,19 +101,34 @@ namespace POS.Forms
 
         private void txtPartyID_TextChanged(object sender, EventArgs e)
         {
-            GetPartyName();
-            Co = cs.GenaricConnection();
+            //GetPartyName();
+            //Co = cs.GenaricConnection();
+            //if (txtPartyID.Text != "")
+            //{
+            //    txtAmountPending.Text = CRUD.CalculatePendingAmount(Co, txtPartyID.Text);
+            //}
+        }
+  
+
+        private void cbPartyName_TextChanged(object sender, EventArgs e)
+        {            Co = cs.GenaricConnection();
             if (txtPartyID.Text != "")
             {
+                txtPartyID.Text = CRUD.GetPartyIdData(Co, cbPartyName.Text);
                 txtAmountPending.Text = CRUD.CalculatePendingAmount(Co, txtPartyID.Text);
 
             }
         }
 
-        private void txtPartyID_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtPartyID_KeyDown(object sender, KeyEventArgs e)
         {
-            
-
+         
+            Co = cs.GenaricConnection();
+            if (txtPartyID.Text != "")
+            {
+                cbPartyName.Text = CRUD.GetPartyNameData(Co, txtPartyID.Text);
+                txtAmountPending.Text = CRUD.CalculatePendingAmount(Co, txtPartyID.Text);
+            }
         }
     }
 }

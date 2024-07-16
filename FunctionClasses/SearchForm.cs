@@ -56,7 +56,7 @@ namespace POS.FunctionClasses
                 }
                 else if (Table == "Expense")
                 {
-                    qry = @"select ID,Date, Purpose, Description from " + Table.Trim() + "" + " where ID='" + Code + "' and ISNULL(IsDeleted,0) =0  ";
+                    qry = @"select ID,Date, Purpose, Description,Amount from " + Table.Trim() + "" + " where ID='" + Code + "' and ISNULL(IsDeleted,0) =0  ";
                     cmd = new SqlCommand(qry, Co);
                     cmd.Parameters.AddWithValue("@Code", Code);
                 }

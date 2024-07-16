@@ -54,6 +54,7 @@ namespace POS.Forms
         {
             try
             {
+                Co = cs.GenaricConnection();
                 if (txtExpenseType.Text == "")
                 {
                     MessageBox.Show("Please Enter Expense Type", "Alert");

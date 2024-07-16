@@ -31,7 +31,8 @@ namespace POS.Forms
             txtID.Text = string.Empty;
             cbPurpose.Text = string.Empty;
             txtDiscription.Text = string.Empty;
-            txtSearch.Text = string.Empty;
+            txtAmount.Text = string.Empty;
+            
             Co = cs.GenaricConnection();
             txtID.Text = CRUD.GetMaxIdentity(Co, "Expense");
             txtID.ReadOnly = true;
@@ -39,12 +40,6 @@ namespace POS.Forms
             btnClear.Text = "Cancel";
             IsUpdate = false;
             dptDate.Focus();
-            dgvExpense.Show();
-            txtSearch.Show();
-            dgvExpense.Refresh();
-            DataTable dt = new DataTable();
-            dt = CRUD.GetExpenseData(Co);
-            dgvExpense.DataSource = dt;
         }
 
         public void GetExpenseType()
@@ -78,16 +73,24 @@ namespace POS.Forms
         {
             try
             {
+                Co = cs.GenaricConnection();
                 if (dptDate.Text == "")
                 {
                     MessageBox.Show("Please Enter Expense Type", "Alert");
                     dptDate.Focus();
+                    return;
+                }
+                if (txtAmount.Text == "")
+                {
+                    MessageBox.Show("Please Enter Amount", "Alert");
+                    txtAmount.Focus();
+                    return;
                 }
                 if (IsUpdate)
                 {
                     if (!LoginInfo.UserType.Equals("User"))
                     {
-                        CRUD.InsertUpdateExpense(Co, Convert.ToInt32(txtID.Text), DateTime.Now, cbPurpose.Text , txtDiscription.Text, IsUpdate);
+                        CRUD.InsertUpdateExpense(Co, Convert.ToInt32(txtID.Text), DateTime.Now, cbPurpose.Text , txtDiscription.Text,Convert.ToDecimal(txtAmount.Text), IsUpdate);
                         MessageBox.Show("Record Updated Successfully.", "Success Message");
                         Initiatefields();
                     }
@@ -101,7 +104,7 @@ namespace POS.Forms
                     //if (!CRUD.CheckName(Co, "Expense", (txtExpenseType.Text).Trim()))
                     //{
                         txtID.Text = CRUD.GetMaxIdentity(Co, "Expense");
-                        CRUD.InsertUpdateExpense(Co, Convert.ToInt32(txtID.Text),Convert.ToDateTime(DateTime.Now), cbPurpose.Text, txtDiscription.Text, IsUpdate);
+                        CRUD.InsertUpdateExpense(Co, Convert.ToInt32(txtID.Text),Convert.ToDateTime(DateTime.Now), cbPurpose.Text, txtDiscription.Text, Convert.ToDecimal(txtAmount.Text), IsUpdate);
 
                         MessageBox.Show("Record Saved Successfully.", "Success Message");
                     //}
@@ -128,12 +131,10 @@ namespace POS.Forms
                 IsUpdate = true;
                 txtID.ReadOnly = false;
                 txtID.Focus();
+               
+               txtID.Text = "";
                 btnClear.Text = "Clear";
                 btnSearch.Text = "Go";
-            }
-            else
-            {
-
             }
         }
 
@@ -146,46 +147,6 @@ namespace POS.Forms
             else
             {
                 this.Close();
-            }
-        }
-
-        private void dgvExpense_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                if (e.RowIndex >= 0)
-                {
-                    DataGridViewRow selectedRow = dgvExpense.Rows[e.RowIndex];
-                    txtID.Text = selectedRow.Cells[0].Value.ToString();
-                    dptDate.Text = selectedRow.Cells[1].Value.ToString();
-                    cbPurpose.Text = selectedRow.Cells[2].Value.ToString();
-                    txtDiscription.Text = selectedRow.Cells[3].Value.ToString();
-                    dgvExpense.Rows.Remove(selectedRow);
-                    btnClear.Text = "Clear";
-                    IsUpdate = true;
-                    dptDate.Focus();
-                    dgvExpense.Hide();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void txtID_TextChanged(object sender, EventArgs e)
-        {
-            if (txtID.Text != "" && btnSearch.Text == "Go")
-            {
-                SearchForm search = new SearchForm();
-                DataTable Data = search.SearchByID(Convert.ToInt16(txtID.Text), "Expense");
-                if (Data.Rows.Count > 0)
-                {
-                    txtID.Text = Data.Rows[0]["ID"].ToString();
-                    dptDate.Text = Data.Rows[0]["Date"].ToString();
-                    cbPurpose.Text = Data.Rows[0]["Purpose"].ToString();
-                    txtDiscription.Text = Data.Rows[0]["Description"].ToString();
-                }
             }
         }
 
@@ -209,68 +170,6 @@ namespace POS.Forms
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-            }
-        }
-
-        private void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                DataTable dt = new DataTable();
-                Co = cs.GenaricConnection();
-
-                string qry = @"select ID,Date, Purpose, Description from Expense 
-                where Purpose like '%" + txtSearch.Text + "%' and IsDeleted =0 order by ID desc";
-                SqlCommand cmd = new SqlCommand(qry, Co);
-                SqlDataReader reader;
-                reader = cmd.ExecuteReader();
-                dt.Load(reader);
-
-                dgvExpense.DataSource = dt;
-                //  dgvPartyInfo.Columns[2].Width = 140;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Down)
-            {
-                dgvExpense.Focus();
-                if (dgvExpense.Rows.Count > 0)
-                {
-                    dgvExpense.CurrentCell = dgvExpense.Rows[0].Cells[0];
-                }
-                e.Handled = true;
-            }
-        }
-
-        private void dgvExpense_KeyDown(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                if (e.KeyCode == Keys.Enter)
-                {
-                    if (dgvExpense.Rows.Count > 0 && dgvExpense.CurrentRow.Index != -1)
-                    {
-                        txtID.Text = dgvExpense.Rows[dgvExpense.CurrentRow.Index].Cells[0].Value.ToString();
-                        dptDate.Text = dgvExpense.Rows[dgvExpense.CurrentRow.Index].Cells[1].Value.ToString();
-                        cbPurpose.Text = dgvExpense.Rows[dgvExpense.CurrentRow.Index].Cells[1].Value.ToString();
-                        txtDiscription.Text = dgvExpense.Rows[dgvExpense.CurrentRow.Index].Cells[1].Value.ToString();
-                        btnClear.Text = "Clear";
-                        dgvExpense.Hide();
-                        IsUpdate = true;
-                        txtSearch.Hide();
-                    }
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
 
@@ -322,6 +221,27 @@ namespace POS.Forms
             {
 
                 MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void txtID_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+            if (Keys.Enter == e.KeyCode) {
+                e.SuppressKeyPress = true;
+                if (txtID.Text != "" && btnSearch.Text == "Go")
+                {
+                    SearchForm search = new SearchForm();
+                    DataTable Data = search.SearchByID(Convert.ToInt16(txtID.Text), "Expense");
+                    if (Data.Rows.Count > 0)
+                    {
+                        txtID.Text = Data.Rows[0]["ID"].ToString();
+                        dptDate.Text = Data.Rows[0]["Date"].ToString();
+                        cbPurpose.Text = Data.Rows[0]["Purpose"].ToString();
+                        txtDiscription.Text = Data.Rows[0]["Description"].ToString();
+                        txtAmount.Text = Data.Rows[0]["Amount"].ToString();
+                    }
+                }
             }
         }
     }

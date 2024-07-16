@@ -125,6 +125,47 @@ namespace POS
                 return Name;
             }
         }
+
+
+        public string GetPartyIdData(SqlConnection con, string Table)
+        {
+            if (con.State != ConnectionState.Open)
+            {
+                con.Open();
+            }
+            SqlCommand cmd = new SqlCommand("Select PartyCode from PartyInfo where IsDeleted =0 and partyname='"+Table+"' order by PartyCode", con);
+            string Name = Convert.ToString(cmd.ExecuteScalar());
+            if (Name == "" || Name == null)
+            {
+                return "1";
+            }
+            else
+            {
+                return Name;
+            }
+        }
+
+
+        public string GetPartyNameData(SqlConnection con, string Table)
+        {
+            if (con.State != ConnectionState.Open)
+            {
+                con.Open();
+            }
+            SqlCommand cmd = new SqlCommand("Select partyname from PartyInfo where IsDeleted =0 and partyname='" + Table + "' order by PartyCode", con);
+            string Name = Convert.ToString(cmd.ExecuteScalar());
+            if (Name == "" || Name == null)
+            {
+                return "1";
+            }
+            else
+            {
+                return Name;
+            }
+        }
+
+
+
         public DataTable GetPartyInfoData(SqlConnection con)
         {
             SqlCommand cmd = new SqlCommand("Select PartyCode,PartyName,Location,Contact  from PartyInfo where IsDeleted =0 order by PartyCode", con);
@@ -134,6 +175,7 @@ namespace POS
             dt.Load(reader);
             return dt;
         }
+       
         public DataTable GetUserInfoData(SqlConnection con)
         {
             SqlCommand cmd = new SqlCommand("Select ID, Name, PhoneNo, CNICNo, Logintype, UserName, UserPassword, isActive from [User] where isActive =1 order by ID", con);
@@ -467,7 +509,7 @@ namespace POS
             cmd.ExecuteNonQuery();
         }
 
-        public void InsertUpdateExpense(SqlConnection Con, int Id, DateTime date, string purpose, string description, bool IsUpdate)
+        public void InsertUpdateExpense(SqlConnection Con, int Id, DateTime date, string purpose, string description, decimal amount,bool IsUpdate)
         {
             SqlCommand cmd = new SqlCommand("InsertUpdateExpense", Con);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -475,6 +517,7 @@ namespace POS
             cmd.Parameters.Add("@Date", SqlDbType.DateTime).Value = date;
             cmd.Parameters.Add("@Purpose", SqlDbType.NVarChar).Value = purpose;
             cmd.Parameters.Add("@Description", SqlDbType.NVarChar).Value = description;
+            cmd.Parameters.Add("@Amount", SqlDbType.Decimal).Value = amount;
             cmd.Parameters.Add("@IsUpdate", SqlDbType.Bit).Value = IsUpdate;
             cmd.ExecuteNonQuery();
         }
@@ -490,7 +533,7 @@ namespace POS
         public string CalculatePendingAmount(SqlConnection Con, string partycode)
         {
             string pendingamount = "0";
-            SqlCommand cmd = new SqlCommand("CalculatePendingAmount", Con);
+            SqlCommand cmd = new SqlCommand("CalculateDifference", Con);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@PartyCode", SqlDbType.NVarChar).Value = partycode;
 
