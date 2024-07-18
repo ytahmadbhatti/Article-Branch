@@ -148,7 +148,7 @@ namespace POS.Forms
         }
 
         private void txtID_TextChanged(object sender, EventArgs e)
-        {
+       {
             if(txtID.Text != "" && btnSearch.Text == "Go")
             {
                 SearchForm search = new SearchForm();
@@ -191,8 +191,8 @@ namespace POS.Forms
                 DataTable dt = new DataTable();
                 Co = cs.GenaricConnection();
 
-                string qry = @"select ID,IdType from ExpenseCoding 
-                where IdType like '%" + txtSearch.Text + "%' and IsDeleted =0 order by ID desc";
+                string qry = @"select ID,Type from ExpenseCoding 
+                where Type like '%" + txtSearch.Text + "%' and IsDeleted =0 order by ID desc";
                 SqlCommand cmd = new SqlCommand(qry, Co);
                 SqlDataReader reader;
                 reader = cmd.ExecuteReader();

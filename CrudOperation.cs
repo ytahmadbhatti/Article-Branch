@@ -198,6 +198,17 @@ namespace POS
 
             return dt;
         }
+        public DataTable GetPartyPaymentData(SqlConnection con)
+        {
+            SqlCommand cmd = new SqlCommand("SELECT [VoucherID],[VoucherDate],[PartyID],[Amount],[Discritipn] FROM Voucher where [IsDeleted]='0'", con);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+
+            return dt;
+        }
         public DataTable GetPurchaseData(SqlConnection con)
         {
             SqlCommand cmd = new SqlCommand(@"SELECT PurchaseId,PurchaseDate,SaleMen,PartyCode,
@@ -273,15 +284,7 @@ namespace POS
             return dt;
         }
 
-        public DataTable GetPartyPaymentData(SqlConnection con)
-        {
-            SqlCommand cmd = new SqlCommand("Select VoucherID,VoucherDate, PartyID, Amount, Discritipn from Vouchers where IsDeleted =0 order by VoucherID", con);
-            SqlDataReader reader;
-            reader = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Load(reader);
-            return dt;
-        }
+     
 
         public void InsertUpdatePartyInfo(SqlConnection Con, int partyCode, string PartyName, string Location,
             string Contact, bool IsUpdate)
@@ -543,6 +546,19 @@ namespace POS
                 pendingamount = result.ToString();
             }
             return pendingamount;
+        }
+
+        public void InsertUpdatePartyPayment(SqlConnection Con, int VoId, DateTime dptDate, int PartyId, decimal Amount, string desc, bool IsUpdate)
+        {
+            SqlCommand cmd = new SqlCommand("InsertUpdatePartyPayment", Con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@VoId", SqlDbType.Int).Value = VoId;
+            cmd.Parameters.Add("@dptDate", SqlDbType.DateTime).Value = dptDate;
+            cmd.Parameters.Add("@PartyId", SqlDbType.Int).Value = PartyId;
+            cmd.Parameters.Add("@Amount", SqlDbType.Decimal).Value = Amount;
+            cmd.Parameters.Add("@Description", SqlDbType.NVarChar).Value = desc;
+            cmd.Parameters.Add("@IsUpdate", SqlDbType.Bit).Value = IsUpdate;
+            cmd.ExecuteNonQuery();
         }
     }
 }

@@ -63,6 +63,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsReport.xsd</DependentUpon>
     </Compile>
+    <Compile Include="F1SearchForm\frmSearchPartyPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F1SearchForm\frmSearchPartyPayment.Designer.cs">
+      <DependentUpon>frmSearchPartyPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="F1SearchForm\frmSearchArticle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
       <SubType>Component</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <EmbeddedResource Include="F1SearchForm\frmSearchPartyPayment.resx">
+      <DependentUpon>frmSearchPartyPayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F1SearchForm\frmSearchArticle.resx">
       <DependentUpon>frmSearchArticle.cs</DependentUpon>
     </EmbeddedResource>
