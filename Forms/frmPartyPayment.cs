@@ -36,14 +36,15 @@ namespace POS.Forms
             txtAmount.Text = string.Empty;
             txtAmountRemaining.Text = string.Empty;
             txtDiscription.Text = string.Empty;
+            lblSearchVoucher.Hide();
+            btnSearch.Text = "Search";
+            btnClear.Text = "Cancel";
+            btnAdd.Text = "Save";
 
             Co = cs.GenaricConnection();
             txtVoucherID.Text = CRUD.GetMaxIdentity(Co, "Voucher");
             fillComboBox(cbPartyName, "PartyCode", "PartyName", "select PartyCode, PartyName from PartyInfo where IsDeleted='0' Order By PartyCode");
-
             txtVoucherID.ReadOnly = true;
-            btnSearch.Text = "Search";
-            btnClear.Text = "Cancel";
             IsUpdate = false;
             txtPartyID.Focus();
 
@@ -105,12 +106,12 @@ namespace POS.Forms
 
         private void txtPartyID_TextChanged(object sender, EventArgs e)
         {
-            //GetPartyName();
-            //Co = cs.GenaricConnection();
-            //if (txtPartyID.Text != "")
-            //{
-            //    txtAmountPending.Text = CRUD.CalculatePendingAmount(Co, txtPartyID.Text);
-            //}
+            Co = cs.GenaricConnection();
+            if (txtPartyID.Text != "")
+            {
+                cbPartyName.Text = CRUD.GetPartyNameData(Co, txtPartyID.Text);
+                txtAmountPending.Text = CRUD.CalculatePendingAmount(Co, txtPartyID.Text);
+            }
         }
 
 
@@ -127,7 +128,7 @@ namespace POS.Forms
 
         private void txtPartyID_KeyDown(object sender, KeyEventArgs e)
         {
-
+            e.SuppressKeyPress = true;
             Co = cs.GenaricConnection();
             if (txtPartyID.Text != "")
             {
@@ -137,11 +138,11 @@ namespace POS.Forms
         }
 
         private void txtAmount_TextChanged(object sender, EventArgs e)
-        {
-            if (txtAmount.Text != "")
+       {
+            if (txtAmount.Text != "" && txtAmountPending.Text!="")
             {
                 decimal pending = Convert.ToDecimal(txtAmountPending.Text);
-                decimal amount = Convert.ToInt32(txtAmount.Text);
+                decimal amount = Convert.ToDecimal(txtAmount.Text);
                 txtAmountRemaining.Text = (pending - amount).ToString();
             }
         }
@@ -174,8 +175,10 @@ namespace POS.Forms
                         if (!LoginInfo.UserType.Equals("User"))
                         {
                             CRUD.InsertUpdatePartyPayment(Co, Convert.ToInt32(txtVoucherID.Text), DateTime.Now, Convert.ToInt32(txtPartyID.Text), Convert.ToDecimal(txtAmount.Text), txtDiscription.Text, IsUpdate);
+                          
                             MessageBox.Show("Record Updated Successfully.", "Success Message");
                             Initiatefields();
+
                         }
                         else
                         {
@@ -188,8 +191,9 @@ namespace POS.Forms
                         //{
                         txtVoucherID.Text = CRUD.GetMaxIdentity(Co, "Voucher");
                         CRUD.InsertUpdatePartyPayment(Co, Convert.ToInt32(txtVoucherID.Text), DateTime.Now, Convert.ToInt32(txtPartyID.Text), Convert.ToDecimal(txtAmount.Text), txtDiscription.Text, IsUpdate);
-
+                      
                         MessageBox.Show("Record Saved Successfully.", "Success Message");
+                        Initiatefields();
                         //}
                         //else
                         //{
@@ -198,7 +202,7 @@ namespace POS.Forms
                         //    return;
                         //}
                     }
-                    Initiatefields();
+                    
                     Co.Close();
                 }
             }
@@ -229,6 +233,7 @@ namespace POS.Forms
                 IsUpdate = true;   
                 txtVoucherID.ReadOnly = false;
                 txtVoucherID.Focus();
+                lblSearchVoucher.Show();
                 btnClear.Text = "Clear";
                 btnSearch.Text = "Go";
             }
@@ -244,8 +249,11 @@ namespace POS.Forms
             }
             if (Keys.Enter == e.KeyCode)
             {
-                e.SuppressKeyPress = true;
-                dptDate.Focus();
+                if (btnSearch.Text == "Go")
+                {
+                    ShowRecord();
+                }
+
             }
         }
 
@@ -253,10 +261,7 @@ namespace POS.Forms
 
         private void txtVoucherID_TextChanged(object sender, EventArgs e)
         {
-            if (btnSearch.Text == "Go")
-            {
-                ShowRecord();
-            }
+          
         }
 
 
@@ -286,12 +291,12 @@ namespace POS.Forms
                         txtVoucherID.Text = reader["VoucherID"].ToString();
                         txtVoucherID.ReadOnly = true;
                         dptDate.Text = reader["VoucherDate"].ToString();
-                        txtPartyID.Text = reader["PartyID"].ToString();
+                        txtPartyID.Text = reader["PartyID"].ToString();      
                         txtAmount.Text = reader["Amount"].ToString();
-
                         txtDiscription.Text = reader["Discritipn"].ToString();
                     }
                     reader.Close();
+                    txtAmountPending.Text = CRUD.CalculatePendingAmount(Co, txtPartyID.Text);
 
 
                 }
@@ -302,5 +307,41 @@ namespace POS.Forms
             }
         }
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            if (btnClear.Text == "Clear")
+            {
+                Initiatefields();
+            }
+            else {
+                this.Close();
+            }
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Connection cs = new Connection();
+                SqlConnection Co = cs.GenaricConnection();
+                CrudOperation crud = new CrudOperation();
+                if (!LoginInfo.UserType.Equals("User"))
+                {
+                    crud.DeletePartyPaymentInv(Co,Convert.ToInt32(txtVoucherID.Text));
+                    MessageBox.Show("Record Deleted Successfully.", "Success Message");
+                    Initiatefields();
+                }
+                else
+                {
+                    MessageBox.Show("You dont have permission to Delete this.", "Warning Message");
+                }
+                Co.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

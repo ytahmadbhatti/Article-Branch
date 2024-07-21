@@ -1,0 +1,60 @@
+CREATE TABLE [dbo].[PurchaseMaster](
+	[PurchaseId] [nvarchar](max) NULL,
+	[PurchaseDate] [datetime] NULL,
+	[SaleMen] [nvarchar](50) NULL,
+	[PartyCode] [nvarchar](50) NULL,
+	[PartyName] [nvarchar](50) NULL,
+	[TotalAmount] [float] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+CREATE TABLE [dbo].[PurchaseDetail](
+	[PurchaseDetailId] [nvarchar](max) NULL,
+	[PurcgaseId] [nvarchar](max) NULL,
+	[ProductCode] [nvarchar](50) NULL,
+	[ProductName] [nvarchar](50) NULL,
+	[SaleRate] [nchar](10) NULL,
+	[Qunatity] [decimal](18, 2) NULL,
+	[Rate] [float] NULL,
+	[NetAmount] [float] NULL,
+	[PurchaseDate] [datetime] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+CREATE TABLE [dbo].[SaleMaster](
+	[SaleId] [nvarchar](max) NULL,
+	[SaleDate] [datetime] NULL,
+	[SaleMen] [nvarchar](50) NULL,
+	[PartyCode] [nvarchar](50) NULL,
+	[PartyName] [nvarchar](50) NULL,
+	[TotalAmount] [float] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+CREATE TABLE [dbo].[SaleDetail](
+	[SaleDate] [datetime] NULL,
+	[SaleDetailId] [nvarchar](max) NULL,
+	[SaleId] [nvarchar](max) NULL,
+	[ProductCode] [nvarchar](50) NULL,
+	[ProductName] [nvarchar](50) NULL,
+	[Qunatity] [decimal](18, 2) NULL,
+	[SaleRate] [float] NULL,
+	[NetAmount] [float] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+CREATE TABLE [dbo].[ProductInfo](
+	[ProductCode] [int] NULL,
+	[ProductName] [nvarchar](max) NULL,
+	[SaleRate] [float] NULL,
+	[IsDeleted] [bit] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+CREATE PROCEDURE [dbo].[DeleteProduct]
+(
+    @ProductCode INT,
+	@IsDelete bit
+)
+AS
+BEGIN
+        UPDATE ProductInfo
+        SET  IsDeleted=1
+        WHERE ProductCode = @ProductCode;
+END
+GO

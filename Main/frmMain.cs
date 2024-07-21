@@ -153,5 +153,11 @@ namespace POS.Main
             frmExpenseCoding frm = new frmExpenseCoding();
             frm.Show();
         }
+
+        private void exepnseTypeCodingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmExpenseCoding frm = new frmExpenseCoding();
+            frm.ShowDialog();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using POS.FunctionClasses;
+﻿using POS.F1SearchForm;
+using POS.FunctionClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,7 +33,7 @@ namespace POS.Forms
             cbPurpose.Text = string.Empty;
             txtDiscription.Text = string.Empty;
             txtAmount.Text = string.Empty;
-            
+            lblSearchExpense.Hide();
             Co = cs.GenaricConnection();
             txtID.Text = CRUD.GetMaxIdentity(Co, "Expense");
             txtID.ReadOnly = true;
@@ -131,8 +132,8 @@ namespace POS.Forms
                 IsUpdate = true;
                 txtID.ReadOnly = false;
                 txtID.Focus();
-               
-               txtID.Text = "";
+                lblSearchExpense.Show();
+                txtID.Text = "";
                 btnClear.Text = "Clear";
                 btnSearch.Text = "Go";
             }
@@ -226,7 +227,6 @@ namespace POS.Forms
 
         private void txtID_KeyDown(object sender, KeyEventArgs e)
         {
-            
             if (Keys.Enter == e.KeyCode) {
                 e.SuppressKeyPress = true;
                 if (txtID.Text != "" && btnSearch.Text == "Go")
@@ -242,6 +242,16 @@ namespace POS.Forms
                         txtAmount.Text = Data.Rows[0]["Amount"].ToString();
                     }
                 }
+            }
+            if (Keys.F1 == e.KeyCode)
+            {
+                frmSearchExpense frm = new frmSearchExpense();
+                frm.ShowDialog();
+                txtID.Text = frm.Id;
+                dptDate.Text = frm.date;
+                cbPurpose.Text = frm.purpose;
+                txtAmount.Text = frm.amount;
+                txtDiscription.Text = frm.description;
             }
         }
     }

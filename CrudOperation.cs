@@ -152,11 +152,11 @@ namespace POS
             {
                 con.Open();
             }
-            SqlCommand cmd = new SqlCommand("Select partyname from PartyInfo where IsDeleted =0 and partyname='" + Table + "' order by PartyCode", con);
+            SqlCommand cmd = new SqlCommand("Select partyname from PartyInfo where IsDeleted =0 and PartyCode='" + Table + "' order by PartyCode", con);
             string Name = Convert.ToString(cmd.ExecuteScalar());
             if (Name == "" || Name == null)
             {
-                return "1";
+                return "";
             }
             else
             {
@@ -284,7 +284,17 @@ namespace POS
             return dt;
         }
 
-     
+        public DataTable GetExpanseData(SqlConnection con)
+        {
+            SqlCommand cmd = new SqlCommand("SELECT [ID],[Date],[Purpose],[Amount],[Description] FROM Expense where [IsDeleted]='0'", con);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+
+            return dt;
+        }
 
         public void InsertUpdatePartyInfo(SqlConnection Con, int partyCode, string PartyName, string Location,
             string Contact, bool IsUpdate)
@@ -323,6 +333,15 @@ namespace POS
             cmd.Parameters.Add("@PurchaseInv", SqlDbType.NVarChar).Value = PurchaseInv;
             cmd.ExecuteNonQuery();
         }
+
+        public void DeletePartyPaymentInv(SqlConnection Con, int PurchaseInv)
+        {
+            SqlCommand cmd = new SqlCommand("DeletePartyPaymentInv", Con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@VoucherId", SqlDbType.Int).Value = PurchaseInv;
+            cmd.ExecuteNonQuery();
+        }
+
         public void DeleteSaleInv(SqlConnection Con, string saleInv)
         {
             SqlCommand cmd = new SqlCommand("DeleteSaleInv", Con);

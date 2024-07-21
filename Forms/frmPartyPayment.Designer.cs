@@ -50,12 +50,14 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtVoucherID = new System.Windows.Forms.TextBox();
+            this.lblSearchVoucher = new System.Windows.Forms.Label();
             this.pnlPartyPayment.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlPartyPayment
             // 
             this.pnlPartyPayment.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pnlPartyPayment.Controls.Add(this.lblSearchVoucher);
             this.pnlPartyPayment.Controls.Add(this.dptDate);
             this.pnlPartyPayment.Controls.Add(this.cbPartyName);
             this.pnlPartyPayment.Controls.Add(this.txtDiscription);
@@ -305,6 +307,7 @@
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClear
             // 
@@ -318,6 +321,7 @@
             this.btnClear.TabIndex = 12;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // label2
             // 
@@ -346,11 +350,23 @@
             this.txtVoucherID.TextChanged += new System.EventHandler(this.txtVoucherID_TextChanged);
             this.txtVoucherID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtVoucherID_KeyDown);
             // 
+            // lblSearchVoucher
+            // 
+            this.lblSearchVoucher.AutoSize = true;
+            this.lblSearchVoucher.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblSearchVoucher.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearchVoucher.Location = new System.Drawing.Point(356, 158);
+            this.lblSearchVoucher.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSearchVoucher.Name = "lblSearchVoucher";
+            this.lblSearchVoucher.Size = new System.Drawing.Size(200, 19);
+            this.lblSearchVoucher.TabIndex = 43;
+            this.lblSearchVoucher.Text = "Press F1 To Search Voucher";
+            // 
             // frmPartyPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1136, 1014);
+            this.ClientSize = new System.Drawing.Size(1136, 907);
             this.Controls.Add(this.pnlPartyPayment);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
@@ -387,5 +403,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbPartyName;
         private System.Windows.Forms.DateTimePicker dptDate;
+        private System.Windows.Forms.Label lblSearchVoucher;
     }
 }

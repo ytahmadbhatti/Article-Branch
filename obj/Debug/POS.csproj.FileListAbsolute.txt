@@ -308,3 +308,4 @@ C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\Article-Branch\obj\Debug\POS.cspro
 C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\Article-Branch\obj\Debug\POS.exe
 C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\Article-Branch\obj\Debug\POS.pdb
 C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\Article-Branch\obj\Debug\POS.F1SearchForm.frmSearchPartyPayment.resources
+C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\Article-Branch\obj\Debug\POS.F1SearchForm.frmSearchExpense.resources
