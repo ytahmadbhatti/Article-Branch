@@ -97,6 +97,8 @@ namespace POS.FunctionClasses
                     cmd = new SqlCommand(qry, Co);
                     cmd.Parameters.AddWithValue("ProductInfo", Code);
                 }
+              
+
                 if (cmd != null)
                 {
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
@@ -126,6 +128,12 @@ namespace POS.FunctionClasses
               if (Table == "ArticleInfo")
                 {
                     qry = @"Select ArticleId,Article from  " + Table.Trim() + " where Article = '" + Code + "' and isnull(IsDeleted,0) =0 ";
+                    cmd = new SqlCommand(qry, Co);
+                    cmd.Parameters.AddWithValue("ProductInfo", Code);
+                }
+                else if (Table == "PurchaseReturnDetail")
+                {
+                    qry = @"select Top (1) UnitPrice,Discount from PurchaseDetail where Article= '" + Code + "'  order by PurchaseDate desc";
                     cmd = new SqlCommand(qry, Co);
                     cmd.Parameters.AddWithValue("ProductInfo", Code);
                 }

@@ -861,7 +861,7 @@ namespace POS.DataSets {
             
             private global::System.Data.DataColumn columnSize;
             
-            private global::System.Data.DataColumn columnDataColumn35;
+            private global::System.Data.DataColumn columnArticle;
             
             private global::System.Data.DataColumn columnDataColumn3;
             
@@ -1004,9 +1004,9 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DataColumn35Column {
+            public global::System.Data.DataColumn ArticleColumn {
                 get {
-                    return this.columnDataColumn35;
+                    return this.columnArticle;
                 }
             }
             
@@ -1055,7 +1055,7 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PurchaseReturnInvRow AddPurchaseReturnInvRow(string PurchaseReturnId, string PurchaseReturnDate, string SaleMan, int PartyCode, string PartyName, int TotalAmount, string PurchaseReturnDetailId, int ProductCode, string ProductName, int PurchaseRate, int ReturnQuantity, int NetAmount, string Size, string DataColumn35, string DataColumn3) {
+            public PurchaseReturnInvRow AddPurchaseReturnInvRow(string PurchaseReturnId, string PurchaseReturnDate, string SaleMan, int PartyCode, string PartyName, int TotalAmount, string PurchaseReturnDetailId, int ProductCode, string ProductName, int PurchaseRate, int ReturnQuantity, int NetAmount, string Size, string Article, string DataColumn3) {
                 PurchaseReturnInvRow rowPurchaseReturnInvRow = ((PurchaseReturnInvRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PurchaseReturnId,
@@ -1071,7 +1071,7 @@ namespace POS.DataSets {
                         ReturnQuantity,
                         NetAmount,
                         Size,
-                        DataColumn35,
+                        Article,
                         DataColumn3};
                 rowPurchaseReturnInvRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPurchaseReturnInvRow);
@@ -1108,7 +1108,7 @@ namespace POS.DataSets {
                 this.columnReturnQuantity = base.Columns["ReturnQuantity"];
                 this.columnNetAmount = base.Columns["NetAmount"];
                 this.columnSize = base.Columns["Size"];
-                this.columnDataColumn35 = base.Columns["DataColumn35"];
+                this.columnArticle = base.Columns["Article"];
                 this.columnDataColumn3 = base.Columns["DataColumn3"];
             }
             
@@ -1141,8 +1141,8 @@ namespace POS.DataSets {
                 base.Columns.Add(this.columnNetAmount);
                 this.columnSize = new global::System.Data.DataColumn("Size", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSize);
-                this.columnDataColumn35 = new global::System.Data.DataColumn("DataColumn35", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDataColumn35);
+                this.columnArticle = new global::System.Data.DataColumn("Article", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArticle);
                 this.columnDataColumn3 = new global::System.Data.DataColumn("DataColumn3", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDataColumn3);
                 this.columnPurchaseReturnId.Caption = "PurchaseId";
@@ -1158,7 +1158,7 @@ namespace POS.DataSets {
                 this.columnReturnQuantity.Caption = "DataColumn2";
                 this.columnNetAmount.Caption = "DataColumn3";
                 this.columnSize.Caption = "DataColumn2";
-                this.columnDataColumn35.Caption = "DataColumn3";
+                this.columnArticle.Caption = "DataColumn3";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2431,17 +2431,17 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string DataColumn35 {
+            public string Article {
                 get {
                     try {
-                        return ((string)(this[this.tablePurchaseReturnInv.DataColumn35Column]));
+                        return ((string)(this[this.tablePurchaseReturnInv.ArticleColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn35\' in table \'PurchaseReturnInv\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Article\' in table \'PurchaseReturnInv\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePurchaseReturnInv.DataColumn35Column] = value;
+                    this[this.tablePurchaseReturnInv.ArticleColumn] = value;
                 }
             }
             
@@ -2619,14 +2619,14 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsDataColumn35Null() {
-                return this.IsNull(this.tablePurchaseReturnInv.DataColumn35Column);
+            public bool IsArticleNull() {
+                return this.IsNull(this.tablePurchaseReturnInv.ArticleColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetDataColumn35Null() {
-                this[this.tablePurchaseReturnInv.DataColumn35Column] = global::System.Convert.DBNull;
+            public void SetArticleNull() {
+                this[this.tablePurchaseReturnInv.ArticleColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

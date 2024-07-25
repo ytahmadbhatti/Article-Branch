@@ -1,77 +1,97 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\",
+  "WorkspaceRootPath": "F:\\Github\\Article-Branch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|c:\\users\\online\\onedrive\\desktop\\pos-shoesnew\\article-branch\\f1searchform\\frmsearchexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|c:\\users\\online\\onedrive\\desktop\\pos-shoesnew\\article-branch\\f1searchform\\frmsearchexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|c:\\users\\online\\onedrive\\desktop\\pos-shoesnew\\article-branch\\forms\\frmexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\f1searchform\\frmsearchpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|f:\\github\\article-branch\\forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\f1searchform\\frmsearchpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|f:\\github\\article-branch\\forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\forms\\frmpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\forms\\frmpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|c:\\users\\online\\onedrive\\desktop\\pos-shoesnew\\article-branch\\forms\\frmexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|c:\\users\\online\\onedrive\\desktop\\pos-shoesnew\\article-branch\\f1searchform\\frmsearchparty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchparty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|c:\\users\\online\\onedrive\\desktop\\pos-shoesnew\\article-branch\\forms\\frmpartycoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpartycoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|f:\\github\\article-branch\\forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\functionclasses\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:functionclasses\\searchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\rptpurchasereturninv.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptpurchasereturninv.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\f1searchform\\frmsearchexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\f1searchform\\frmsearchpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\f1searchform\\frmsearchpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpartypayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\f1searchform\\frmsearchparty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchparty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpartycoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpartycoding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\f1searchform\\frmsearcharticle.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\f1searchform\\frmsearcharticle.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearcharticle.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\f1searchform\\frmsearchpartypayment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\f1searchform\\frmsearchpartypayment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchpartypayment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\f1searchform\\frmsearchpartypayment.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\f1searchform\\frmsearchpartypayment.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:f1searchform\\frmsearchpartypayment.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
@@ -82,168 +102,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "frmExpense.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmExpense.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmExpense.cs",
               "RelativeDocumentMoniker": "Forms\\frmExpense.cs",
               "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmExpense.cs [Design]",
-              "RelativeToolTip": "Forms\\frmExpense.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-21T17:58:50.153Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmSearchExpense.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchExpense.cs",
+              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchExpense.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchExpense.cs",
+              "RelativeToolTip": "F1SearchForm\\frmSearchExpense.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAIA9wCoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T18:16:38.501Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmExpense.cs",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmExpense.cs",
-              "RelativeDocumentMoniker": "Forms\\frmExpense.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmExpense.cs",
-              "RelativeToolTip": "Forms\\frmExpense.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAQwCkAAAAdAAAA",
+              "Title": "frmSale.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
+              "RelativeDocumentMoniker": "Forms\\frmSale.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs [Design]",
+              "RelativeToolTip": "Forms\\frmSale.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T09:06:07.252Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmSearchExpense.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchExpense.cs",
-              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchExpense.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchExpense.cs [Design]",
-              "RelativeToolTip": "F1SearchForm\\frmSearchExpense.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T18:13:29.921Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-07-25T16:40:46.182Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmSearchExpense.cs",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchExpense.cs",
-              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchExpense.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchExpense.cs",
-              "RelativeToolTip": "F1SearchForm\\frmSearchExpense.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAIAwwC8AAAAIAAAA",
+              "DocumentIndex": 1,
+              "Title": "frmSale.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
+              "RelativeDocumentMoniker": "Forms\\frmSale.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
+              "RelativeToolTip": "Forms\\frmSale.cs",
+              "ViewState": "AQIAAPEAAAAAAAAAAAAIwPoAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T18:16:38.501Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CrudOperation.cs",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\CrudOperation.cs",
-              "RelativeDocumentMoniker": "CrudOperation.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\CrudOperation.cs",
-              "RelativeToolTip": "CrudOperation.cs",
-              "ViewState": "AQIAABMBAAAAAAAAAAAWwCABAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T15:12:51.873Z",
+              "WhenOpened": "2024-07-25T16:20:49.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "frmSearchPartyPayment.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.cs",
-              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchPartyPayment.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.cs [Design]",
-              "RelativeToolTip": "F1SearchForm\\frmSearchPartyPayment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T15:11:12.503Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmSearchPartyPayment.cs",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.cs",
-              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchPartyPayment.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.cs",
-              "RelativeToolTip": "F1SearchForm\\frmSearchPartyPayment.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAQwIoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T15:11:52.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmPartyPayment.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPartyPayment.cs",
-              "RelativeDocumentMoniker": "Forms\\frmPartyPayment.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPartyPayment.cs [Design]",
-              "RelativeToolTip": "Forms\\frmPartyPayment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T15:15:11.48Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmPartyPayment.cs",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPartyPayment.cs",
-              "RelativeDocumentMoniker": "Forms\\frmPartyPayment.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPartyPayment.cs",
-              "RelativeToolTip": "Forms\\frmPartyPayment.cs",
-              "ViewState": "AQIAAAgBAAAAAAAAAAAewAsBAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T15:14:56.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmSearchParty.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchParty.cs",
-              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchParty.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchParty.cs [Design]",
-              "RelativeToolTip": "F1SearchForm\\frmSearchParty.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T18:14:02.697Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmPartyCoding.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPartyCoding.cs",
-              "RelativeDocumentMoniker": "Forms\\frmPartyCoding.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPartyCoding.cs [Design]",
-              "RelativeToolTip": "Forms\\frmPartyCoding.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T18:02:56.306Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Main\\frmMain.cs",
-              "RelativeDocumentMoniker": "Main\\frmMain.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Main\\frmMain.cs [Design]",
-              "RelativeToolTip": "Main\\frmMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T09:49:31.235Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "frmPurchase.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPurchase.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
               "RelativeDocumentMoniker": "Forms\\frmPurchase.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPurchase.cs [Design]",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs [Design]",
               "RelativeToolTip": "Forms\\frmPurchase.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T15:21:10.977Z",
@@ -251,67 +171,266 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
+              "Title": "CrudOperation.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\CrudOperation.cs",
+              "RelativeDocumentMoniker": "CrudOperation.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\CrudOperation.cs",
+              "RelativeToolTip": "CrudOperation.cs",
+              "ViewState": "AQIAAJ4BAAAAAAAAAAAvwKsBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T15:12:51.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmPurchase.cs",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPurchase.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
               "RelativeDocumentMoniker": "Forms\\frmPurchase.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPurchase.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
               "RelativeToolTip": "Forms\\frmPurchase.cs",
-              "ViewState": "AQIAAPsAAAAAAAAAAAAewAcBAAAhAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAvwKIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T15:21:18.649Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmPurchaseReturn.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchaseReturn.cs",
+              "RelativeDocumentMoniker": "Forms\\frmPurchaseReturn.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchaseReturn.cs [Design]",
+              "RelativeToolTip": "Forms\\frmPurchaseReturn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T15:30:47.24Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmPurchaseReturn.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchaseReturn.cs",
+              "RelativeDocumentMoniker": "Forms\\frmPurchaseReturn.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchaseReturn.cs",
+              "RelativeToolTip": "Forms\\frmPurchaseReturn.cs",
+              "ViewState": "AQIAAJEBAAAAAAAAAAAkwKIBAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T15:35:36.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SearchForm.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\FunctionClasses\\SearchForm.cs",
+              "RelativeDocumentMoniker": "FunctionClasses\\SearchForm.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\FunctionClasses\\SearchForm.cs*",
+              "RelativeToolTip": "FunctionClasses\\SearchForm.cs*",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAAAHEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T15:42:36.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "rptPurchaseReturnInv.rpt",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptPurchaseReturnInv.rpt",
+              "RelativeDocumentMoniker": "Report\\rptPurchaseReturnInv.rpt",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\rptPurchaseReturnInv.rpt",
+              "RelativeToolTip": "Report\\rptPurchaseReturnInv.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-23T17:04:36.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Connection.cs",
+              "RelativeDocumentMoniker": "Connection.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Connection.cs",
+              "RelativeToolTip": "Connection.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBQAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T15:10:34.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmSearchPartyPayment.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.cs",
+              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchPartyPayment.cs",
+              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T15:11:12.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmSearchPartyPayment.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.cs",
+              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchPartyPayment.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.cs",
+              "RelativeToolTip": "F1SearchForm\\frmSearchPartyPayment.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAQwIoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T15:11:52.407Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "frmMain.cs",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Main\\frmMain.cs",
-              "RelativeDocumentMoniker": "Main\\frmMain.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Main\\frmMain.cs",
-              "RelativeToolTip": "Main\\frmMain.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAWwJIAAAAMAAAA",
+              "Title": "frmPartyPayment.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPartyPayment.cs",
+              "RelativeDocumentMoniker": "Forms\\frmPartyPayment.cs",
+              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPartyPayment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T09:49:49.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T15:15:11.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "frmSearchArticle.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchArticle.Designer.cs",
-              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchArticle.Designer.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchArticle.Designer.cs",
-              "RelativeToolTip": "F1SearchForm\\frmSearchArticle.Designer.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAjwBEAAAAQAAAA",
+              "DocumentIndex": 13,
+              "Title": "frmPartyPayment.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPartyPayment.cs",
+              "RelativeDocumentMoniker": "Forms\\frmPartyPayment.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPartyPayment.cs",
+              "RelativeToolTip": "Forms\\frmPartyPayment.cs",
+              "ViewState": "AQIAAAgBAAAAAAAAAAAewAsBAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T15:12:10.655Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "frmSearchPartyPayment.resx",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.resx",
-              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchPartyPayment.resx",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.resx",
-              "RelativeToolTip": "F1SearchForm\\frmSearchPartyPayment.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-07-17T15:11:34.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T15:14:56.823Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "frmSearchParty.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchParty.cs",
+              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchParty.cs",
+              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchParty.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T18:14:02.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "frmPartyCoding.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPartyCoding.cs",
+              "RelativeDocumentMoniker": "Forms\\frmPartyCoding.cs",
+              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Forms\\frmPartyCoding.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T18:02:56.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Main\\frmMain.cs",
+              "RelativeDocumentMoniker": "Main\\frmMain.cs",
+              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\Main\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T09:49:31.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Main\\frmMain.cs",
+              "RelativeDocumentMoniker": "Main\\frmMain.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Main\\frmMain.cs",
+              "RelativeToolTip": "Main\\frmMain.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAWwJIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T09:49:49.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "frmSearchArticle.Designer.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchArticle.Designer.cs",
+              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchArticle.Designer.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchArticle.Designer.cs",
+              "RelativeToolTip": "F1SearchForm\\frmSearchArticle.Designer.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAjwBEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T15:12:10.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frmSearchPartyPayment.resx",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.resx",
+              "RelativeDocumentMoniker": "F1SearchForm\\frmSearchPartyPayment.resx",
+              "ToolTip": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.resx",
+              "RelativeToolTip": "F1SearchForm\\frmSearchPartyPayment.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-07-17T15:11:34.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "frmSearchPartyPayment.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.Designer.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.Designer.cs",
               "RelativeDocumentMoniker": "F1SearchForm\\frmSearchPartyPayment.Designer.cs",
-              "ToolTip": "C:\\Users\\Online\\OneDrive\\Desktop\\POS-ShoesNew\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.Designer.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\F1SearchForm\\frmSearchPartyPayment.Designer.cs",
               "RelativeToolTip": "F1SearchForm\\frmSearchPartyPayment.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T15:11:07.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T15:11:07.732Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1045,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }

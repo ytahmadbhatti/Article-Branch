@@ -15,10 +15,10 @@ namespace POS
             string connectionString;
 
             //Ahmad Bhatti PC
-           connectionString = "server=AHMAD-BHATTI;database=Article;Integrated Security=True";
+          // connectionString = "server=AHMAD-BHATTI;database=Article;Integrated Security=True";
 
             //  Ali Bhatt PC
-            //connectionString = "server=DESKTOP-V2407GU\\SQLEXPRESS;database=Article;Integrated Security=True";
+            connectionString = "server=DESKTOP-V2407GU\\SQLEXPRESS;database=Article1;Integrated Security=True";
 
 
             SqlConnection con = new SqlConnection(connectionString);

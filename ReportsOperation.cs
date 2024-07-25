@@ -22,8 +22,8 @@ namespace POS
         public void PurchaseReturnInvQuery(SqlConnection con, DataSet dsWeight, string purchaseReturnInv)
         {
             SqlDataAdapter adp = new SqlDataAdapter(@"SELECT  PRM.PurchaseReturnId,PRM.PurchaseReturnDate
-      ,PRM.SaleMan ,PRM.PartyCode,PRM.PartyName,PRM.TotalAmount, PRD.PurchaseReturnDetailId,PRD.ProductCode
-      ,PRD.ProductName,PRD.PurchaseRate,PRD.ReturnQuantity,PRD.NetAmount,PRD.Size FROM PurchaseReturnMaster PRM
+      ,PRM.SaleMan ,PRM.PartyCode,PRM.PartyName,PRM.TotalAmount, PRD.PurchaseReturnDetailId,
+      PRD.Article,PRD.PurchaseRate,PRD.ReturnQuantity,PRD.NetAmount FROM PurchaseReturnMaster PRM
        inner join PurchaseReturnDetail PRD on PRD.PurchaseReturnId= PRM.PurchaseReturnId
        where PRM.PurchaseReturnId='" + purchaseReturnInv + "'", con);
             adp.Fill(dsWeight, "PurchaseReturnInv");

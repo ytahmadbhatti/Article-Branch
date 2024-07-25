@@ -29,17 +29,18 @@ namespace POS.Forms
         public void initize()
         {
             txtPartyCode.Text = string.Empty;
-            txtProductCode.Text = string.Empty;
+            txtArticle.Text = string.Empty;
             txtRemainingQuantity.Text = string.Empty;
             txtPartyName.Text = string.Empty;
-            txtProduct.Text = string.Empty;
+           
             txtSalesMan.Text = string.Empty;
             txtAmount.Text = string.Empty;
             txtStock.Text = string.Empty;
             txtPurchaseRate.Text = string.Empty;
             txtReturnQuantity.Text = string.Empty;
             txtNetAmount.Text = string.Empty;
-            cmbSize.Text = string.Empty;
+            txtDiscount.Text = string.Empty;
+           
 
             Connection cs = new Connection();
             SqlConnection Co = cs.GenaricConnection();
@@ -63,14 +64,12 @@ namespace POS.Forms
             dgvPurchaseReturn.Rows.Clear();
             dgvPurchaseReturn.ScrollBars = ScrollBars.Both;
 
-            dgvPurchaseReturn.ColumnCount = 6;
-            dgvPurchaseReturn.Columns[0].Name = "Product Code";
-            dgvPurchaseReturn.Columns[1].Name = "Product";
-            dgvPurchaseReturn.Columns[2].Name = "Size";
-            dgvPurchaseReturn.Columns[3].Name = "Returned Quantity";
-            dgvPurchaseReturn.Columns[4].Name = "Purchase Rate";
-            dgvPurchaseReturn.Columns[5].Name = "Net Amount";
-
+            dgvPurchaseReturn.ColumnCount = 5;
+            dgvPurchaseReturn.Columns[0].Name = "Article";
+            dgvPurchaseReturn.Columns[1].Name = "Purchae Rate";
+            dgvPurchaseReturn.Columns[2].Name = "Discount";
+            dgvPurchaseReturn.Columns[3].Name = "Quantity Return";
+            dgvPurchaseReturn.Columns[4].Name = "Net Amount";         
         }
 
         private void txtPurchaseReturnInv_KeyDown(object sender, KeyEventArgs e)
@@ -121,7 +120,7 @@ namespace POS.Forms
                         txtPartyName.Text = Data.Rows[0]["PartyName"].ToString();
                         txtPartyName.ReadOnly = true;
                         btnClear.Text = "Clear";
-                        txtProductCode.Focus();
+                        txtArticle.Focus();
                     }
                     else
                     {
@@ -156,40 +155,43 @@ namespace POS.Forms
             if (Keys.Enter == e.KeyCode)
             {
                 e.SuppressKeyPress = true;
-                txtProductCode.Focus();
+                txtArticle.Focus();
             }
         }
 
         private void txtProductCode_KeyDown(object sender, KeyEventArgs e)
         {
+            Connection cs = new Connection();
+            SqlConnection Co = cs.GenaricConnection();
+            CrudOperation crud = new CrudOperation();
+
             if (e.KeyCode == Keys.Enter)
             {
-                cmbSize.Text = "";
                 txtStock.Text = "";
                 txtRemainingQuantity.Text = "";
                 txtNetAmount.Text = "";
                 txtReturnQuantity.Text = "";
                 e.SuppressKeyPress = true;
-                if (txtProductCode.Text != "")
+                if (txtArticle.Text != "")
                 {
                     SearchForm search = new SearchForm();
-                    DataTable Data = search.SearchByCode(Convert.ToInt16(txtProductCode.Text), "ProductInfo");
+                    DataTable Data = search.SearchByAricle(txtArticle.Text, "PurchaseReturnDetail");
                     if (Data.Rows.Count > 0)
                     {
-                        txtProductCode.Text = Data.Rows[0]["ProductCode"].ToString();
-                        txtProduct.Text = Data.Rows[0]["ProductName"].ToString();
-                        txtPurchaseRate.Text = Data.Rows[0]["PurchaseRate"].ToString();
-                        txtProduct.ReadOnly = true;
+                        txtPurchaseRate.Text = Data.Rows[0]["UnitPrice"].ToString();
+                        txtDiscount.Text = Data.Rows[0]["Discount"].ToString();
+                        txtStock.Text = crud.GetStock(Co, txtArticle.Text);
                         txtStock.ReadOnly = true;
-                     
-                        cmbSize.Focus();
+                        txtReturnQuantity.Focus();
                     }
                     else
                     {
                         MessageBox.Show("Product Not Registered", "Alert");
-                        txtProductCode.Text = "";
-                        txtProduct.Text = "";
-                        txtProductCode.Focus();
+                        txtArticle.Text = "";
+                        txtReturnQuantity.Text = "";
+                        txtDiscount.Text = "";
+                        txtPurchaseRate.Text = "";
+                        txtArticle.Focus();
                     }
                 }
             }
@@ -197,10 +199,8 @@ namespace POS.Forms
             {
                 frmSearchArticle frm = new frmSearchArticle();
                 frm.ShowDialog();
-                txtProductCode.Text = frm.Id;
-                txtProduct.Text = frm.article;
-                txtProduct.ReadOnly = true;
-                cmbSize.Focus();
+                txtArticle.Text = frm.article;
+                
             }
         }
 
@@ -263,16 +263,18 @@ namespace POS.Forms
         private void btnAdd_Click_1(object sender, EventArgs e)
         {
 
-            if (txtProductCode.Text == "")
+            if (txtArticle.Text == "")
             {
                 MessageBox.Show("Please Enter Product.", "Alert Message");
-                txtProductCode.Focus();
+                txtArticle.Focus();
+                return;
             }
 
             else if (txtReturnQuantity.Text == "")
             {
                 MessageBox.Show("Please Enter Returned Quantity.", "Alert Message");
                 txtReturnQuantity.Focus();
+                return;
             }
             else if (Convert.ToInt32(txtReturnQuantity.Text) > Convert.ToInt32(txtStock.Text))
             {
@@ -283,39 +285,39 @@ namespace POS.Forms
             else if (Convert.ToInt32(txtReturnQuantity.Text) < 0)
             {
                 MessageBox.Show("Please Enter Return Quantity Greater Than 0.", "Alert Message");
-                cmbSize.Focus();
+                return;   
             }
             else
             {
-                string productCode = txtProductCode.Text;
+                string productCode = txtArticle.Text;
                  dgvPurchaseReturn.Rows.Add(
                     productCode,
-                    txtProduct.Text,
-                    cmbSize.Text,
+                   txtPurchaseRate.Text,
+                   txtDiscount.Text,
                     txtReturnQuantity.Text,
-                    txtPurchaseRate.Text,
                    txtNetAmount.Text
                 );
                 double totalAmount = 0.0;
                 foreach (DataGridViewRow row in dgvPurchaseReturn.Rows)
                 {
                     double netAmount;
-                    if (row.Cells[5].Value != null && double.TryParse(row.Cells[5].Value.ToString(), out netAmount))
+                    if (row.Cells[4].Value != null && double.TryParse(row.Cells[4].Value.ToString(), out netAmount))
                     {
                         totalAmount += netAmount;
                     }
                 }
                 txtAmount.Text = totalAmount.ToString();
-                txtProductCode.Text = "";
-                txtProduct.Text = "";
+                txtArticle.Text = "";
+            
                 txtReturnQuantity.Text = "";
                 txtPurchaseRate.Text = "";
                 txtStock.Text = "";
                 txtReturnQuantity.Text = "";
                 txtRemainingQuantity.Text = "";
                 txtNetAmount.Text = "";
-                cmbSize.Text = "";
-                txtProductCode.Focus();
+                txtDiscount.Text = "";
+                
+                txtArticle.Focus();
                 dgvPurchaseReturn.Show();
             }
         }
@@ -336,7 +338,7 @@ namespace POS.Forms
                 else if (dgvPurchaseReturn.Rows.Count == 1)
                 {
                     MessageBox.Show("Please Enter Product.", "Alert");
-                    txtProductCode.Focus();
+                    txtArticle.Focus();
                 }
                 else
                 {
@@ -372,12 +374,11 @@ namespace POS.Forms
                             SqlCommand cmd = new SqlCommand("InsertPurchaseReturnDetail", Co);
                             cmd.CommandType = CommandType.StoredProcedure;
                             cmd.Parameters.Add("@PurchaseReturnInv", SqlDbType.NVarChar).Value = txtPurchaseReturnInv.Text;
-                            cmd.Parameters.Add("@ProductCode", SqlDbType.Int).Value = dgvPurchaseReturn.Rows[L].Cells[0].Value;
-                            cmd.Parameters.Add("@ProductName", SqlDbType.NVarChar).Value = dgvPurchaseReturn.Rows[L].Cells[1].Value;
-                            cmd.Parameters.Add("@Size", SqlDbType.NVarChar).Value = dgvPurchaseReturn.Rows[L].Cells[2].Value;
+                            cmd.Parameters.Add("@Article", SqlDbType.NVarChar).Value = dgvPurchaseReturn.Rows[L].Cells[0].Value;
+                            cmd.Parameters.Add("@PurchaseRate", SqlDbType.Float).Value = dgvPurchaseReturn.Rows[L].Cells[1].Value;
+                            cmd.Parameters.Add("@Discount", SqlDbType.Int).Value = dgvPurchaseReturn.Rows[L].Cells[2].Value;
                             cmd.Parameters.Add("@ReturnQuantity", SqlDbType.Decimal).Value = dgvPurchaseReturn.Rows[L].Cells[3].Value;
-                            cmd.Parameters.Add("@PurchaseRate", SqlDbType.Float).Value = dgvPurchaseReturn.Rows[L].Cells[4].Value;
-                            cmd.Parameters.Add("@NetAmount", SqlDbType.Float).Value = dgvPurchaseReturn.Rows[L].Cells[5].Value;
+                            cmd.Parameters.Add("@NetAmount", SqlDbType.Float).Value = dgvPurchaseReturn.Rows[L].Cells[4].Value;
                             cmd.Parameters.Add("@Date", SqlDbType.DateTime).Value = DateTime.Now;
 
                             dgvPurchaseReturn.Rows[L].Cells[0].ReadOnly = true;
@@ -393,10 +394,9 @@ namespace POS.Forms
                             cmd1.CommandType = CommandType.StoredProcedure;
                             cmd1.Parameters.Add("@InvType", SqlDbType.VarChar).Value = "PR";
                             cmd1.Parameters.Add("@InvId", SqlDbType.NVarChar).Value = txtPurchaseReturnInv.Text;
-                            cmd1.Parameters.Add("@ProductCode", SqlDbType.Int).Value = dgvPurchaseReturn.Rows[L].Cells[0].Value;
-                            cmd1.Parameters.Add("@Size", SqlDbType.Int).Value = dgvPurchaseReturn.Rows[L].Cells[2].Value;
-                            cmd1.Parameters.Add("@Quantity", SqlDbType.Decimal).Value = dgvPurchaseReturn.Rows[L].Cells[3].Value;
-                            cmd1.Parameters.Add("@NetAmount", SqlDbType.Float).Value = dgvPurchaseReturn.Rows[L].Cells[5].Value;
+                            cmd1.Parameters.Add("@Article", SqlDbType.NVarChar).Value = dgvPurchaseReturn.Rows[L].Cells[0].Value;
+                            cmd1.Parameters.Add("@Pair", SqlDbType.Decimal).Value = dgvPurchaseReturn.Rows[L].Cells[3].Value;
+                            cmd1.Parameters.Add("@NetAmount", SqlDbType.Float).Value = dgvPurchaseReturn.Rows[L].Cells[4].Value;
                             cmd1.Parameters.Add("@DateTime", SqlDbType.DateTime).Value = DateTime.Now;
                             cmd1.Parameters.Add("@UserName", SqlDbType.VarChar).Value = txtSalesMan.Text;
 
@@ -408,7 +408,15 @@ namespace POS.Forms
                     }
                     MessageBox.Show("Record Saved Successfully.", "Success Message");
 
-                    PrintReport();
+                    DialogResult result = MessageBox.Show("Do you want to print the report?", "Print Report", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        PrintReport();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Printing canceled.", "Canceled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
 
                     Co.Close();
                     initize();
@@ -426,19 +434,18 @@ namespace POS.Forms
         {
             try
             {
-                if (e.RowIndex >= 0)
+                if (dgvPurchaseReturn.Rows[1].Cells[0].Value !=null)
                 {
                     DataGridViewRow selectedRow = dgvPurchaseReturn.Rows[e.RowIndex];
-                    txtProductCode.Text = selectedRow.Cells[0].Value.ToString();
-                    txtProduct.Text = selectedRow.Cells[1].Value.ToString();
-                    cmbSize.Text = selectedRow.Cells[2].Value.ToString();
-                    txtReturnQuantity.Text = selectedRow.Cells[3].Value.ToString();
+                    txtArticle.Text = selectedRow.Cells[0].Value.ToString();
+                    txtPurchaseRate.Text = selectedRow.Cells[1].Value.ToString();
+                    txtReturnQuantity.Text = selectedRow.Cells[2].Value.ToString();
+                    txtDiscount.Text = selectedRow.Cells[3].Value.ToString();
                     txtNetAmount.Text = selectedRow.Cells[4].Value.ToString();
 
-                    txtNetAmount.Text = selectedRow.Cells[5].Value.ToString();
                     dgvPurchaseReturn.Rows.Remove(selectedRow);
                     btnClear.Text = "Clear";
-                    txtProductCode.Focus();
+                    txtArticle.Focus();
                 }
             }
             catch (Exception ex)
@@ -506,7 +513,6 @@ namespace POS.Forms
                 }
                 Connection cs = new Connection();
                 SqlConnection Co = cs.GenaricConnection();
-
                 string qry = @" SELECT PurchaseReturnId,PurchaseReturnDate,SaleMan,PartyCode,PartyName,TotalAmount
                from PurchaseReturnMaster where PurchaseReturnId='" + txtPurchaseReturnInv.Text + "'";
 
@@ -527,8 +533,8 @@ namespace POS.Forms
                     }
                     reader.Close();
 
-                    string qry2 = @"SELECT  PurchaseReturnDetailId,PurchaseReturnId,ProductCode,
-                    ProductName,PurchaseRate,ReturnQuantity ,NetAmount,Size FROM PurchaseReturnDetail
+                    string qry2 = @"SELECT  PurchaseReturnDetailId,PurchaseReturnId,
+                    Article,PurchaseRate,ReturnQuantity ,NetAmount,Discount FROM PurchaseReturnDetail
                      where PurchaseReturnId= '" + txtPurchaseReturnInv.Text + "' order by PurchaseReturnId";
                     SqlCommand cmd2 = new SqlCommand(qry2, Co);
                     SqlDataReader reader2;
@@ -542,23 +548,16 @@ namespace POS.Forms
                                 decimal quantityValue;
                                 if (decimal.TryParse(reader2["ReturnQuantity"].ToString(), out quantityValue))
                                 {
-                                    int quantityInt = (int)quantityValue; // Convert to integer
+                                    int quantityInt = (int)quantityValue;
                                     dgvPurchaseReturn.Rows.Add(
-                                        reader2["ProductCode"].ToString(),
-                                        reader2["ProductName"].ToString(),
-                                          reader2["Size"].ToString(),
-                                           quantityInt,
-                                           reader2["PurchaseRate"].ToString(),
+                                        reader2["Article"].ToString(),
+                                        reader2["PurchaseRate"].ToString(),
+                                        reader2["Discount"].ToString(),
+                                           quantityInt,       
                                         reader2["NetAmount"].ToString()
                                     );
-                                }
-                                else
-                                {
-                                }
-                            }
-                            else
-                            {
-                            }
+                                }                 
+                            }        
                         }
                         txtPurchaseReturnInv.ReadOnly = true;
 
@@ -567,7 +566,6 @@ namespace POS.Forms
                         btnDelete.Enabled = true;
                         btnSave.Enabled = true;
                     }
-
                 }
             }
             catch (Exception ex)
@@ -575,7 +573,6 @@ namespace POS.Forms
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void txtPurchaseReturnInv_TextChanged(object sender, EventArgs e)
         {
             if (btnSearch.Text == "Go")
@@ -645,9 +642,9 @@ namespace POS.Forms
                 Connection cs = new Connection();
                 SqlConnection Co = cs.GenaricConnection();
                 CrudOperation crud = new CrudOperation();
-                if (txtProductCode.Text != "" && cmbSize.Text != "")
+                if (txtArticle.Text != "")
                 {
-                    txtStock.Text = crud.GetStock(Co, txtProductCode.Text);
+                    txtStock.Text = crud.GetStock(Co, txtArticle.Text);
                 }
             }
             catch (Exception ex)

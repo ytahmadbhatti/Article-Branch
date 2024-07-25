@@ -148,7 +148,15 @@ namespace POS.Forms
                     }
                     MessageBox.Show("Record Saved Successfully.", "Success Message");
 
-                    printReport();
+                    DialogResult result = MessageBox.Show("Do you want to print the report?", "Print Report", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        printReport();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Printing canceled.", "Canceled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
 
 
                     Co.Close();

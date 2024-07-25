@@ -269,7 +269,7 @@ namespace POS.Forms
                         if (!LoginInfo.UserType.Equals("User"))
                         {
                             crud.InsertSaleMaster(Co, txtSaleInv.Text, DateTime.Now, txtSalesMan.Text, Convert.ToInt32(txtPartyCode.Text),
-                           txtPartyName.Text, Convert.ToInt64(txtAmount.Text), IsUpdate);
+                           txtPartyName.Text, Convert.ToDecimal(txtAmount.Text), IsUpdate);
                         }
                         else
                         {
@@ -279,7 +279,7 @@ namespace POS.Forms
                     if (IsUpdate != true)
                     {
                         crud.InsertSaleMaster(Co, txtSaleInv.Text, DateTime.Now, txtSalesMan.Text, Convert.ToInt32(txtPartyCode.Text),
-                                  txtPartyName.Text, Convert.ToInt64(txtAmount.Text), IsUpdate);
+                                  txtPartyName.Text, Convert.ToDecimal(txtAmount.Text), IsUpdate);
                     }
 
                     for (int L = 0; L < dgvSale.Rows.Count; L++)
@@ -295,12 +295,12 @@ namespace POS.Forms
                             SqlCommand cmd = new SqlCommand("InsertSaleDetail", Co);
                             cmd.CommandType = CommandType.StoredProcedure;
                             cmd.Parameters.Add("@SaleInv", SqlDbType.NVarChar).Value = txtSaleInv.Text;
-                            cmd.Parameters.Add("@ProductCode", SqlDbType.Int).Value = dgvSale.Rows[L].Cells[0].Value;
-                            cmd.Parameters.Add("@ProductName", SqlDbType.NVarChar).Value = dgvSale.Rows[L].Cells[1].Value;
-                            cmd.Parameters.Add("@Size", SqlDbType.NVarChar).Value = dgvSale.Rows[L].Cells[2].Value;
-                            cmd.Parameters.Add("@Quantity", SqlDbType.Decimal).Value = Convert.ToDecimal(dgvSale.Rows[L].Cells[3].Value);
-                            cmd.Parameters.Add("@SaleRate", SqlDbType.Float).Value = Convert.ToDecimal(dgvSale.Rows[L].Cells[4].Value);
-                            cmd.Parameters.Add("@NetAmount", SqlDbType.Float).Value =Convert.ToDecimal(dgvSale.Rows[L].Cells[5].Value);
+                            cmd.Parameters.Add("@Article", SqlDbType.NVarChar).Value = dgvSale.Rows[L].Cells[0].Value;
+                            cmd.Parameters.Add("@Pair", SqlDbType.Int).Value = Convert.ToInt32(dgvSale.Rows[L].Cells[1].Value);
+                            cmd.Parameters.Add("@SaleRate", SqlDbType.Decimal).Value = Convert.ToDecimal(dgvSale.Rows[L].Cells[2].Value);
+                            cmd.Parameters.Add("@TotalSaleRate", SqlDbType.Decimal).Value = Convert.ToDecimal(dgvSale.Rows[L].Cells[3].Value);
+                            cmd.Parameters.Add("@Discount", SqlDbType.Int).Value = Convert.ToInt32(dgvSale.Rows[L].Cells[4].Value);
+                            cmd.Parameters.Add("@NetAmount", SqlDbType.Decimal).Value =Convert.ToDecimal(dgvSale.Rows[L].Cells[5].Value);
                             cmd.Parameters.Add("@Date", SqlDbType.DateTime).Value = DateTime.Now;
 
                             dgvSale.Rows[L].Cells[0].ReadOnly = true;
@@ -316,9 +316,8 @@ namespace POS.Forms
                             cmd1.CommandType = CommandType.StoredProcedure;
                             cmd1.Parameters.Add("@InvType", SqlDbType.VarChar).Value = "SI";
                             cmd1.Parameters.Add("@InvId", SqlDbType.NVarChar).Value = txtSaleInv.Text;
-                            cmd1.Parameters.Add("@ProductCode", SqlDbType.Int).Value = dgvSale.Rows[L].Cells[0].Value;
-                            cmd1.Parameters.Add("@Quantity", SqlDbType.Decimal).Value = dgvSale.Rows[L].Cells[3].Value;
-                            cmd1.Parameters.Add("@Size", SqlDbType.Int).Value = Convert.ToInt32(dgvSale.Rows[L].Cells[2].Value);
+                            cmd1.Parameters.Add("@Article", SqlDbType.NVarChar).Value = dgvSale.Rows[L].Cells[0].Value;
+                            cmd1.Parameters.Add("@Pair", SqlDbType.Decimal).Value = dgvSale.Rows[L].Cells[1].Value;
                             cmd1.Parameters.Add("@NetAmount", SqlDbType.Float).Value = dgvSale.Rows[L].Cells[5].Value;
                             cmd1.Parameters.Add("@DateTime", SqlDbType.DateTime).Value = DateTime.Now;
                             cmd1.Parameters.Add("@UserName", SqlDbType.VarChar).Value = txtSalesMan.Text;
@@ -330,10 +329,15 @@ namespace POS.Forms
                         }
                     }
                     MessageBox.Show("Record Saved Successfully.", "Success Message");
-                    //if (rbEnglish.Checked || rbUrdu.Checked && rbPrintYes.Checked)
-                    //{
+                    DialogResult result = MessageBox.Show("Do you want to print the report?", "Print Report", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
                         printReport();
-                    //}
+                    }
+                    else
+                    {
+                        MessageBox.Show("Printing canceled.", "Canceled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
 
                     Co.Close();
                     Initiatefields();

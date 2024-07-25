@@ -416,7 +416,7 @@ namespace POS
         
 
         public void InsertSaleMaster(SqlConnection Con, string saleInv, DateTime dtpInv, string saleMan, int partyCode, string PartyName,
-        Int64 TotalAmount, bool isUpdate)
+        decimal TotalAmount, bool isUpdate)
         {
             SqlCommand cmd = new SqlCommand("InsertUpdateSaleMaster", Con);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -425,7 +425,7 @@ namespace POS
             cmd.Parameters.Add("@SaleMan", SqlDbType.VarChar).Value = saleMan;
             cmd.Parameters.Add("@PartyCode", SqlDbType.Int).Value = partyCode;
             cmd.Parameters.Add("@PartyName", SqlDbType.NVarChar).Value = PartyName;
-            cmd.Parameters.Add("@TotalAmount", SqlDbType.Float).Value = TotalAmount;
+            cmd.Parameters.Add("@TotalAmount", SqlDbType.Decimal).Value = TotalAmount;
             cmd.Parameters.Add("@IsUpdate", SqlDbType.Bit).Value = isUpdate;
             cmd.ExecuteNonQuery();
         }
