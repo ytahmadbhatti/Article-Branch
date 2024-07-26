@@ -137,6 +137,12 @@ namespace POS.FunctionClasses
                     cmd = new SqlCommand(qry, Co);
                     cmd.Parameters.AddWithValue("ProductInfo", Code);
                 }
+                else if (Table == "SaleReturnDetail")
+                {
+                    qry = @"select Top (1) SaleRate,Discount from SaleDetail where Article= '" + Code + "'";
+                    cmd = new SqlCommand(qry, Co);
+                    cmd.Parameters.AddWithValue("ProductInfo", Code);
+                }
                 if (cmd != null)
                 {
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
