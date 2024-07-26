@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "F:\\Github\\Article-Branch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|f:\\github\\article-branch\\forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|f:\\github\\article-branch\\forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|f:\\github\\article-branch\\crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -27,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|f:\\github\\article-branch\\forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\rptpurchasereturninv.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptpurchasereturninv.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\f1searchform\\frmsearchexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -134,19 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmSale.cs [Design]",
-              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
-              "RelativeDocumentMoniker": "Forms\\frmSale.cs",
-              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs [Design]",
-              "RelativeToolTip": "Forms\\frmSale.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T16:40:46.182Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmSale.cs",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
               "RelativeDocumentMoniker": "Forms\\frmSale.cs",
@@ -159,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "frmPurchase.cs [Design]",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
               "RelativeDocumentMoniker": "Forms\\frmPurchase.cs",
@@ -171,33 +159,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CrudOperation.cs",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\CrudOperation.cs",
               "RelativeDocumentMoniker": "CrudOperation.cs",
               "ToolTip": "F:\\Github\\Article-Branch\\CrudOperation.cs",
               "RelativeToolTip": "CrudOperation.cs",
-              "ViewState": "AQIAAJ4BAAAAAAAAAAAvwKsBAAAMAAAA",
+              "ViewState": "AQIAAJ4BAAAAAAAAAAAvwK8BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T15:12:51.873Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmPurchase.cs",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
               "RelativeDocumentMoniker": "Forms\\frmPurchase.cs",
               "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
               "RelativeToolTip": "Forms\\frmPurchase.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAvwKIAAAAlAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAIwEAAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T15:21:18.649Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Connection.cs",
+              "RelativeDocumentMoniker": "Connection.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Connection.cs",
+              "RelativeToolTip": "Connection.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAqwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T15:10:34.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "frmSale.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
+              "RelativeDocumentMoniker": "Forms\\frmSale.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs [Design]",
+              "RelativeToolTip": "Forms\\frmSale.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T16:40:46.182Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmPurchaseReturn.cs [Design]",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchaseReturn.cs",
               "RelativeDocumentMoniker": "Forms\\frmPurchaseReturn.cs",
@@ -209,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "frmPurchaseReturn.cs",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchaseReturn.cs",
               "RelativeDocumentMoniker": "Forms\\frmPurchaseReturn.cs",
@@ -222,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SearchForm.cs",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\FunctionClasses\\SearchForm.cs",
               "RelativeDocumentMoniker": "FunctionClasses\\SearchForm.cs",
@@ -234,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "rptPurchaseReturnInv.rpt",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptPurchaseReturnInv.rpt",
               "RelativeDocumentMoniker": "Report\\rptPurchaseReturnInv.rpt",
@@ -242,18 +255,6 @@
               "RelativeToolTip": "Report\\rptPurchaseReturnInv.rpt",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
               "WhenOpened": "2024-07-23T17:04:36.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Connection.cs",
-              "DocumentMoniker": "F:\\Github\\Article-Branch\\Connection.cs",
-              "RelativeDocumentMoniker": "Connection.cs",
-              "ToolTip": "F:\\Github\\Article-Branch\\Connection.cs",
-              "RelativeToolTip": "Connection.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBQAAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:10:34.323Z"
             },
             {
               "$type": "Document",
