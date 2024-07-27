@@ -23,7 +23,7 @@ namespace POS
         {
             SqlDataAdapter adp = new SqlDataAdapter(@"SELECT  PRM.PurchaseReturnId,PRM.PurchaseReturnDate
       ,PRM.SaleMan ,PRM.PartyCode,PRM.PartyName,PRM.TotalAmount, PRD.PurchaseReturnDetailId,
-      PRD.Article,PRD.PurchaseRate,PRD.ReturnQuantity,PRD.NetAmount FROM PurchaseReturnMaster PRM
+      PRD.Article,PRD.PurchaseRate,PRD.ReturnQuantity,PRD.NetAmount,PRD.Discount FROM PurchaseReturnMaster PRM
        inner join PurchaseReturnDetail PRD on PRD.PurchaseReturnId= PRM.PurchaseReturnId
        where PRM.PurchaseReturnId='" + purchaseReturnInv + "'", con);
             adp.Fill(dsWeight, "PurchaseReturnInv");
@@ -58,9 +58,9 @@ namespace POS
         public void SaleInvQuery(SqlConnection con, DataSet dsPurchase, string saleInv)
         {
             SqlDataAdapter adp = new SqlDataAdapter(@"SELECT SM.SaleId,SM.SaleDate,SM.SaleMan
-      ,SM.PartyCode,SM.PartyName,SM.TotalAmount,SD.SaleDetailId,SD.ProductCode,SD.ProductName
-      ,SD.Quantity,SD.SaleRate,SD.NetAmount,SD.Size FROM SaleMaster SM
-      inner join SaleDetail SD on SD.SaleId= SM.SaleId  where SM.SaleId='"+saleInv+"' ", con);
+      ,SM.PartyCode,SM.PartyName,SM.TotalAmount,SD.SaleDetailId,SD.Article
+      ,SD.Pair,SD.SaleRate,SD.NetAmount FROM SaleMaster SM
+      inner join SaleDetail SD on SD.SaleId= SM.SaleId where SM.SaleId='" + saleInv+"' ", con);
             adp.Fill(dsPurchase, "SaleInv");
         }
     }

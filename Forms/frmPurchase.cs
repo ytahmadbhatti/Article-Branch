@@ -245,16 +245,23 @@ namespace POS.Forms
                 if (e.RowIndex >= 0)
                 {
                     DataGridViewRow selectedRow = dgvPurchase.Rows[e.RowIndex];
-                    txtArticle.Text = selectedRow.Cells[0].Value.ToString();
-                    txtPair.Text = selectedRow.Cells[1].Value.ToString();
-                    txtTotalPurchase.Text = selectedRow.Cells[2].Value.ToString();
-                    int disc = Convert.ToInt32(selectedRow.Cells[3].Value);
-                    txtDiscount.Text = Convert.ToString(disc);
-                    txtNetAmount.Text = selectedRow.Cells[4].Value.ToString();
+                    if (selectedRow.Cells[0].Value != null)
+                    {
+                        txtArticle.Text = selectedRow.Cells[0].Value.ToString();
+                        txtPair.Text = selectedRow.Cells[1].Value.ToString();
+                        txtPurchaseRate.Text = selectedRow.Cells[2].Value.ToString();
+                        txtTotalPurchase.Text = selectedRow.Cells[3].Value.ToString();
+                        txtDiscount.Text = selectedRow.Cells[4].Value.ToString();
+                        txtNetAmount.Text = selectedRow.Cells[5].Value.ToString();
 
-                    dgvPurchase.Rows.Remove(selectedRow);
-                    btnClear.Text = "Clear";
-                    txtArticle.Focus();
+                        dgvPurchase.Rows.Remove(selectedRow);
+                        btnClear.Text = "Clear";
+                        txtArticle.Focus();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please Select Accurate column", "Validation", MessageBoxButtons.OK);
+                    }
                 }
             }
             catch (Exception ex)

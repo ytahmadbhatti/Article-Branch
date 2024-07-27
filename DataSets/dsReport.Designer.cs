@@ -863,7 +863,7 @@ namespace POS.DataSets {
             
             private global::System.Data.DataColumn columnArticle;
             
-            private global::System.Data.DataColumn columnDataColumn3;
+            private global::System.Data.DataColumn columnDiscount;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1012,9 +1012,9 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DataColumn3Column {
+            public global::System.Data.DataColumn DiscountColumn {
                 get {
-                    return this.columnDataColumn3;
+                    return this.columnDiscount;
                 }
             }
             
@@ -1055,7 +1055,7 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PurchaseReturnInvRow AddPurchaseReturnInvRow(string PurchaseReturnId, string PurchaseReturnDate, string SaleMan, int PartyCode, string PartyName, int TotalAmount, string PurchaseReturnDetailId, int ProductCode, string ProductName, int PurchaseRate, int ReturnQuantity, int NetAmount, string Size, string Article, string DataColumn3) {
+            public PurchaseReturnInvRow AddPurchaseReturnInvRow(string PurchaseReturnId, string PurchaseReturnDate, string SaleMan, int PartyCode, string PartyName, int TotalAmount, string PurchaseReturnDetailId, int ProductCode, string ProductName, int PurchaseRate, int ReturnQuantity, int NetAmount, string Size, string Article, decimal Discount) {
                 PurchaseReturnInvRow rowPurchaseReturnInvRow = ((PurchaseReturnInvRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PurchaseReturnId,
@@ -1072,7 +1072,7 @@ namespace POS.DataSets {
                         NetAmount,
                         Size,
                         Article,
-                        DataColumn3};
+                        Discount};
                 rowPurchaseReturnInvRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPurchaseReturnInvRow);
                 return rowPurchaseReturnInvRow;
@@ -1109,7 +1109,7 @@ namespace POS.DataSets {
                 this.columnNetAmount = base.Columns["NetAmount"];
                 this.columnSize = base.Columns["Size"];
                 this.columnArticle = base.Columns["Article"];
-                this.columnDataColumn3 = base.Columns["DataColumn3"];
+                this.columnDiscount = base.Columns["Discount"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1143,8 +1143,8 @@ namespace POS.DataSets {
                 base.Columns.Add(this.columnSize);
                 this.columnArticle = new global::System.Data.DataColumn("Article", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArticle);
-                this.columnDataColumn3 = new global::System.Data.DataColumn("DataColumn3", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDataColumn3);
+                this.columnDiscount = new global::System.Data.DataColumn("Discount", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDiscount);
                 this.columnPurchaseReturnId.Caption = "PurchaseId";
                 this.columnPurchaseReturnDate.Caption = "PurchaseDate";
                 this.columnSaleMan.Caption = "DataColumn1";
@@ -1318,9 +1318,9 @@ namespace POS.DataSets {
             
             private global::System.Data.DataColumn columnSize;
             
-            private global::System.Data.DataColumn columnDataColumn35;
+            private global::System.Data.DataColumn columnArticle;
             
-            private global::System.Data.DataColumn columnDataColumn3;
+            private global::System.Data.DataColumn columnPair;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1461,17 +1461,17 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DataColumn35Column {
+            public global::System.Data.DataColumn ArticleColumn {
                 get {
-                    return this.columnDataColumn35;
+                    return this.columnArticle;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DataColumn3Column {
+            public global::System.Data.DataColumn PairColumn {
                 get {
-                    return this.columnDataColumn3;
+                    return this.columnPair;
                 }
             }
             
@@ -1512,7 +1512,7 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SaleInvRow AddSaleInvRow(string SaleId, string SaleDate, string SaleMan, int PartyCode, string PartyName, int TotalAmount, string SaleDetailId, int ProductCode, string ProductName, int Quantity, int SaleRate, int NetAmount, string Size, string DataColumn35, string DataColumn3) {
+            public SaleInvRow AddSaleInvRow(string SaleId, string SaleDate, string SaleMan, int PartyCode, string PartyName, int TotalAmount, string SaleDetailId, int ProductCode, string ProductName, int Quantity, int SaleRate, int NetAmount, string Size, string Article, string Pair) {
                 SaleInvRow rowSaleInvRow = ((SaleInvRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         SaleId,
@@ -1528,8 +1528,8 @@ namespace POS.DataSets {
                         SaleRate,
                         NetAmount,
                         Size,
-                        DataColumn35,
-                        DataColumn3};
+                        Article,
+                        Pair};
                 rowSaleInvRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSaleInvRow);
                 return rowSaleInvRow;
@@ -1565,8 +1565,8 @@ namespace POS.DataSets {
                 this.columnSaleRate = base.Columns["SaleRate"];
                 this.columnNetAmount = base.Columns["NetAmount"];
                 this.columnSize = base.Columns["Size"];
-                this.columnDataColumn35 = base.Columns["DataColumn35"];
-                this.columnDataColumn3 = base.Columns["DataColumn3"];
+                this.columnArticle = base.Columns["Article"];
+                this.columnPair = base.Columns["Pair"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1598,10 +1598,10 @@ namespace POS.DataSets {
                 base.Columns.Add(this.columnNetAmount);
                 this.columnSize = new global::System.Data.DataColumn("Size", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSize);
-                this.columnDataColumn35 = new global::System.Data.DataColumn("DataColumn35", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDataColumn35);
-                this.columnDataColumn3 = new global::System.Data.DataColumn("DataColumn3", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDataColumn3);
+                this.columnArticle = new global::System.Data.DataColumn("Article", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArticle);
+                this.columnPair = new global::System.Data.DataColumn("Pair", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPair);
                 this.columnSaleId.Caption = "PurchaseId";
                 this.columnSaleDate.Caption = "PurchaseDate";
                 this.columnSaleMan.Caption = "DataColumn1";
@@ -1615,7 +1615,7 @@ namespace POS.DataSets {
                 this.columnSaleRate.Caption = "DataColumn2";
                 this.columnNetAmount.Caption = "DataColumn3";
                 this.columnSize.Caption = "DataColumn2";
-                this.columnDataColumn35.Caption = "DataColumn3";
+                this.columnArticle.Caption = "DataColumn3";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2447,17 +2447,17 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string DataColumn3 {
+            public decimal Discount {
                 get {
                     try {
-                        return ((string)(this[this.tablePurchaseReturnInv.DataColumn3Column]));
+                        return ((decimal)(this[this.tablePurchaseReturnInv.DiscountColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn3\' in table \'PurchaseReturnInv\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Discount\' in table \'PurchaseReturnInv\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePurchaseReturnInv.DataColumn3Column] = value;
+                    this[this.tablePurchaseReturnInv.DiscountColumn] = value;
                 }
             }
             
@@ -2631,14 +2631,14 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsDataColumn3Null() {
-                return this.IsNull(this.tablePurchaseReturnInv.DataColumn3Column);
+            public bool IsDiscountNull() {
+                return this.IsNull(this.tablePurchaseReturnInv.DiscountColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetDataColumn3Null() {
-                this[this.tablePurchaseReturnInv.DataColumn3Column] = global::System.Convert.DBNull;
+            public void SetDiscountNull() {
+                this[this.tablePurchaseReturnInv.DiscountColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2866,33 +2866,33 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string DataColumn35 {
+            public string Article {
                 get {
                     try {
-                        return ((string)(this[this.tableSaleInv.DataColumn35Column]));
+                        return ((string)(this[this.tableSaleInv.ArticleColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn35\' in table \'SaleInv\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Article\' in table \'SaleInv\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSaleInv.DataColumn35Column] = value;
+                    this[this.tableSaleInv.ArticleColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string DataColumn3 {
+            public string Pair {
                 get {
                     try {
-                        return ((string)(this[this.tableSaleInv.DataColumn3Column]));
+                        return ((string)(this[this.tableSaleInv.PairColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn3\' in table \'SaleInv\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Pair\' in table \'SaleInv\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSaleInv.DataColumn3Column] = value;
+                    this[this.tableSaleInv.PairColumn] = value;
                 }
             }
             
@@ -3054,26 +3054,26 @@ namespace POS.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsDataColumn35Null() {
-                return this.IsNull(this.tableSaleInv.DataColumn35Column);
+            public bool IsArticleNull() {
+                return this.IsNull(this.tableSaleInv.ArticleColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetDataColumn35Null() {
-                this[this.tableSaleInv.DataColumn35Column] = global::System.Convert.DBNull;
+            public void SetArticleNull() {
+                this[this.tableSaleInv.ArticleColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsDataColumn3Null() {
-                return this.IsNull(this.tableSaleInv.DataColumn3Column);
+            public bool IsPairNull() {
+                return this.IsNull(this.tableSaleInv.PairColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetDataColumn3Null() {
-                this[this.tableSaleInv.DataColumn3Column] = global::System.Convert.DBNull;
+            public void SetPairNull() {
+                this[this.tableSaleInv.PairColumn] = global::System.Convert.DBNull;
             }
         }
         

@@ -434,18 +434,25 @@ namespace POS.Forms
         {
             try
             {
-                if (dgvPurchaseReturn.Rows[1].Cells[0].Value !=null)
+                if (e.RowIndex >= 0)
                 {
                     DataGridViewRow selectedRow = dgvPurchaseReturn.Rows[e.RowIndex];
-                    txtArticle.Text = selectedRow.Cells[0].Value.ToString();
-                    txtPurchaseRate.Text = selectedRow.Cells[1].Value.ToString();
-                    txtReturnQuantity.Text = selectedRow.Cells[2].Value.ToString();
-                    txtDiscount.Text = selectedRow.Cells[3].Value.ToString();
-                    txtNetAmount.Text = selectedRow.Cells[4].Value.ToString();
+                    if (selectedRow.Cells[0].Value != null)
+                    {
+                        txtArticle.Text = selectedRow.Cells[0].Value.ToString();
+                        txtPurchaseRate.Text = selectedRow.Cells[1].Value.ToString();
+                        txtDiscount.Text = selectedRow.Cells[2].Value.ToString();
+                        txtReturnQuantity.Text = selectedRow.Cells[3].Value.ToString();
+                        txtNetAmount.Text = selectedRow.Cells[4].Value.ToString();
 
-                    dgvPurchaseReturn.Rows.Remove(selectedRow);
-                    btnClear.Text = "Clear";
-                    txtArticle.Focus();
+                        dgvPurchaseReturn.Rows.Remove(selectedRow);
+                        btnClear.Text = "Clear";
+                        txtArticle.Focus();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please Select Accurate column", "Validation", MessageBoxButtons.OK);
+                    }
                 }
             }
             catch (Exception ex)

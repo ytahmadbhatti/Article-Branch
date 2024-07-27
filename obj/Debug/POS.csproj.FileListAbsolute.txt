@@ -311,3 +311,5 @@ C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\Article-Branch\obj\Debug\POS.F1Sea
 C:\Users\Online\OneDrive\Desktop\POS-ShoesNew\Article-Branch\obj\Debug\POS.F1SearchForm.frmSearchExpense.resources
 F:\Github\Article-Branch\obj\Debug\POS.F1SearchForm.frmSearchExpense.resources
 F:\Github\Article-Branch\obj\Debug\POS.F1SearchForm.frmSearchPartyPayment.resources
+F:\Github\Article-Branch\bin\Debug\Report\rptSaleReturnInv3Inch.rpt
+F:\Github\Article-Branch\bin\Debug\Report\rptSaleReturnInv3Inch.cs

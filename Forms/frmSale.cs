@@ -415,9 +415,9 @@ namespace POS.Forms
                     }
                     reader.Close();
 
-                    string qry2 = @"SELECT SaleDetailId,SaleId,ProductCode,ProductName,
-                    Quantity,SaleRate,NetAmount,SaleDate,Size FROM SaleDetail
-                     where SaleId= '" + txtSaleInv.Text + "' order by SaleId";
+                    string qry2 = @"SELECT SaleDetailId,SaleId,Article,Discount,
+                    Pair,SaleRate,NetAmount,SaleDate,TotalSaleRate FROM SaleDetail
+                     where SaleId= '" + txtSaleInv.Text + "'";
                     SqlCommand cmd2 = new SqlCommand(qry2, Co);
                     SqlDataReader reader2;
                     reader2 = cmd2.ExecuteReader();
@@ -426,28 +426,14 @@ namespace POS.Forms
                     {
                         while (reader2.Read())
                         {
-                            if (reader2["Quantity"] != DBNull.Value)
-                            {
-                                decimal quantityValue;
-                                if (decimal.TryParse(reader2["Quantity"].ToString(), out quantityValue))
-                                {
-                                    int quantityInt = (int)quantityValue; // Convert to integer
-                                    dgvSale.Rows.Add(
-                                        reader2["ProductCode"].ToString(),
-                                        reader2["ProductName"].ToString(),
-                                        reader2["Size"].ToString(),
-                                        quantityInt,
-                                        reader2["SaleRate"].ToString(),
-                                        reader2["NetAmount"].ToString()
-                                    );
-                                }
-                                else
-                                {
-                                }
-                            }
-                            else
-                            {
-                            }
+                            dgvSale.Rows.Add(
+                                reader2["Article"].ToString(),
+                                reader2["Pair"].ToString(),
+                                reader2["SaleRate"].ToString(),
+                                reader2["TotalSaleRate"].ToString(),
+                                reader2["Discount"].ToString(),
+                                reader2["NetAmount"].ToString()
+                                ) ;
                         }
                         txtSaleInv.ReadOnly = true;
 
@@ -505,18 +491,25 @@ namespace POS.Forms
         {
             try
             {
-                if (e.RowIndex >= 0)
-                {
-                    DataGridViewRow selectedRow = dgvSale.Rows[e.RowIndex];
+                DataGridViewRow selectedRow = dgvSale.Rows[e.RowIndex];
+                if (selectedRow.Cells[0].Value != null)
+                {  
                     txtArticle.Text = selectedRow.Cells[0].Value.ToString();
+                    txtPair.Text = selectedRow.Cells[1].Value.ToString();
+                    txtSaleRate.Text = selectedRow.Cells[2].Value.ToString();
+                    txtTotalSale.Text = selectedRow.Cells[3].Value.ToString();
+                    txtDiscount.Text = selectedRow.Cells[4].Value.ToString();
+                    txtNetAmount.Text = selectedRow.Cells[5].Value.ToString();
                     
-                    txtPair.Text = selectedRow.Cells[3].Value.ToString();
-                    txtNetAmount.Text = selectedRow.Cells[4].Value.ToString();
-                    txtSaleRate.Text = selectedRow.Cells[5].Value.ToString();
                     dgvSale.Rows.Remove(selectedRow);
                     btnClear.Text = "Clear";
                     txtArticle.Focus();
                 }
+                else
+                {
+                    MessageBox.Show("Please Select Accurate column", "Validation", MessageBoxButtons.OK);
+                }
+                
             }
             catch (Exception ex)
             {

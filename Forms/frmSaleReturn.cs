@@ -390,11 +390,9 @@ namespace POS.Forms
                             Co.Close();
                         }
                     }
+
                     MessageBox.Show("Record Saved Successfully.", "Success Message");
-                    //if (rbEnglish.Checked || rbUrdu.Checked && rbPrintYes.Checked)
-                    //{
-                    //    printReport();
-                    //}
+                 
                     Co.Close();
                     initize();
                 }
@@ -412,14 +410,22 @@ namespace POS.Forms
                 if (e.RowIndex >= 0)
                 {
                     DataGridViewRow selectedRow = dgvPurchaseReturn.Rows[e.RowIndex];
-                    txtArticle.Text = selectedRow.Cells[0].Value.ToString();
-                  
-                    txtReturnQuantity.Text = selectedRow.Cells[3].Value.ToString();
-                    txtSaleRate.Text = selectedRow.Cells[4].Value.ToString();
-                    txtNetAmount.Text = selectedRow.Cells[5].Value.ToString();
-                    dgvPurchaseReturn.Rows.Remove(selectedRow);
-                    btnClear.Text = "Clear";
-                    txtArticle.Focus();
+                    if (selectedRow.Cells[0].Value != null)
+                    {
+                        txtArticle.Text = selectedRow.Cells[0].Value.ToString();
+                        txtSaleRate.Text = selectedRow.Cells[1].Value.ToString();
+                        txtDiscount.Text = selectedRow.Cells[2].Value.ToString();
+                        txtReturnQuantity.Text = selectedRow.Cells[3].Value.ToString();
+                        txtNetAmount.Text = selectedRow.Cells[4].Value.ToString();
+
+                        dgvPurchaseReturn.Rows.Remove(selectedRow);
+                        btnClear.Text = "Clear";
+                        txtArticle.Focus();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please Select Accurate column", "Validation", MessageBoxButtons.OK);
+                    }
                 }
             }
             catch (Exception ex)
@@ -504,9 +510,9 @@ namespace POS.Forms
                     }
                     reader.Close();
 
-                    string qry2 = @"SELECT  SaleReturnDetailId,SaleReturnId,ProductCode,ProductName,
-                    SaleRate,ReturnQuantity ,NetAmount,SaleReturnDate,Size FROM SaleReturnDetail
-                     where SaleReturnId= '" + txtSaleReturnInv.Text + "' order by SaleReturnDetailId";
+                    string qry2 = @"SELECT  SaleReturnDetailId,SaleReturnId,Article,Discount,
+                    SaleRate,ReturnQuantity ,NetAmount,SaleReturnDate FROM SaleReturnDetail
+                     where SaleReturnId= '" + txtSaleReturnInv.Text + "' ";
                     SqlCommand cmd2 = new SqlCommand(qry2, Co);
                     SqlDataReader reader2;
                     reader2 = cmd2.ExecuteReader();
@@ -521,30 +527,21 @@ namespace POS.Forms
                                 {
                                     int quantityInt = (int)quantityValue; // Convert to integer
                                     dgvPurchaseReturn.Rows.Add(
-                                        reader2["ProductCode"].ToString(),
-                                        reader2["ProductName"].ToString(),
-                                        reader2["Size"].ToString(),
+                                        reader2["Article"].ToString(),
+                                        reader2["SaleRate"].ToString(),
+                                        reader2["Discount"].ToString(),
                                            quantityInt,
-                                           reader2["SaleRate"].ToString(),
                                         reader2["NetAmount"].ToString()
                                     );
-                                }
-                                else
-                                {
-                                }
-                            }
-                            else
-                            {
-                            }
+                                }           
+                            }  
                         }
                         txtSaleReturnInv.ReadOnly = true;
-
                         reader2.Close();
                         IsUpdate = true;
                         btnDelete.Enabled = true;
                         btnSave.Enabled = true;
                     }
-
                 }
             }
             catch (Exception ex)
@@ -639,6 +636,21 @@ namespace POS.Forms
                 e.SuppressKeyPress = true;
                 txtReturnQuantity.Focus();
             }
+        }
+        public void printReport()
+        {
+            try
+            {
+                ReportViewer frmRpt = new ReportViewer();
+                frmRpt.SaleInvReport(txtSaleReturnInv.Text);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }

@@ -210,6 +210,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Report\rptSaleReturnInv3Inch.cs">
+      <DependentUpon>rptSaleReturnInv3Inch.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Report\rptSaleInvBetweenDate.cs">
       <DependentUpon>rptSaleInvBetweenDate.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -325,6 +332,11 @@
     <EmbeddedResource Include="Report\rptPurchaseReturnBetweenDate.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptPurchaseReturnBetweenDate.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSaleReturnInv3Inch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSaleReturnInv3Inch.cs</LastGenOutput>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\rptSaleInvBetweenDate.rpt">
