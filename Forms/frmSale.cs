@@ -281,7 +281,7 @@ namespace POS.Forms
                         crud.InsertSaleMaster(Co, txtSaleInv.Text, DateTime.Now, txtSalesMan.Text, Convert.ToInt32(txtPartyCode.Text),
                                   txtPartyName.Text, Convert.ToDecimal(txtAmount.Text), IsUpdate);
                     }
-
+                    crud.DeleteStock(Co, txtSaleInv.Text);
                     for (int L = 0; L < dgvSale.Rows.Count; L++)
                     {
                         if (dgvSale.Rows[L].Cells[1].Value == null)
@@ -318,6 +318,9 @@ namespace POS.Forms
                             cmd1.Parameters.Add("@InvId", SqlDbType.NVarChar).Value = txtSaleInv.Text;
                             cmd1.Parameters.Add("@Article", SqlDbType.NVarChar).Value = dgvSale.Rows[L].Cells[0].Value;
                             cmd1.Parameters.Add("@Pair", SqlDbType.Decimal).Value = dgvSale.Rows[L].Cells[1].Value;
+                            cmd1.Parameters.Add("@UnitPrice", SqlDbType.Decimal).Value = Convert.ToDecimal(dgvSale.Rows[L].Cells[2].Value);
+                            cmd1.Parameters.Add("@TotalAmount", SqlDbType.Decimal).Value =Convert.ToDecimal(dgvSale.Rows[L].Cells[3].Value);
+                            cmd1.Parameters.Add("@Discount", SqlDbType.Int).Value = Convert.ToInt32(dgvSale.Rows[L].Cells[4].Value);
                             cmd1.Parameters.Add("@NetAmount", SqlDbType.Float).Value = dgvSale.Rows[L].Cells[5].Value;
                             cmd1.Parameters.Add("@DateTime", SqlDbType.DateTime).Value = DateTime.Now;
                             cmd1.Parameters.Add("@UserName", SqlDbType.VarChar).Value = txtSalesMan.Text;
@@ -341,7 +344,7 @@ namespace POS.Forms
 
                     Co.Close();
                     Initiatefields();
-                    Co.Close();
+                  
                 }
             }
             catch (Exception ex)
@@ -536,6 +539,7 @@ namespace POS.Forms
                 if (!LoginInfo.UserType.Equals("User"))
                 {
                     crud.DeleteSaleInv(Co, txtSaleInv.Text);
+                    crud.DeleteStock(Co, txtSaleInv.Text);
                     MessageBox.Show("Record Deleted Successfully.", "Success Message");
                     Initiatefields();
                 }

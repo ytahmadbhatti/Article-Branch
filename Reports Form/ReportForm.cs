@@ -39,6 +39,15 @@ namespace POS.Report_Form
             {
                 ReportLabel.Text = "Purchase Return Invoice Between DateTime";
             }
+            
+            if (Main.Main.ReportType == "CashBookReeport")
+            {
+                ReportLabel.Text = "Cash Book Between DateTime";
+            }
+            if (Main.Main.ReportType == "StockReport")
+            {
+                ReportLabel.Text = "Stock Between DateTime";
+            }
         }
 
         private void btnShowReport_Click(object sender, EventArgs e)
@@ -55,6 +64,14 @@ namespace POS.Report_Form
             if (Main.Main.ReportType == "PurchaseReturnInv")
             {
                 RptView.PurhcaseReturnInvBetweenDateReport(dtpFrom.Value, dtpTo.Value);
+            }
+            if (Main.Main.ReportType == "CashBookReeport")
+            {
+                RptView.CashBookBetweenDateReport(dtpFrom.Value, dtpTo.Value);
+            }
+            if (Main.Main.ReportType == "StockReport")
+            {
+                RptView.StockBetweenDateReport(dtpFrom.Value, dtpTo.Value);
             }
         }
     }

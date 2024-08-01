@@ -159,5 +159,19 @@ namespace POS.Main
             frmExpenseCoding frm = new frmExpenseCoding();
             frm.ShowDialog();
         }
+
+        private void cahBookReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportType = "CashBookReeport";
+            ReportForm frm = new ReportForm();
+            frm.ShowDialog();
+        }
+
+        private void stockReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportType = "StockReport";
+            ReportForm frm = new ReportForm();
+            frm.ShowDialog();
+        }
     }
 }

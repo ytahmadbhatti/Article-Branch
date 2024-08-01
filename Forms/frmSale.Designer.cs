@@ -116,7 +116,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(70, 408);
+            this.label7.Location = new System.Drawing.Point(70, 432);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 21);
             this.label7.TabIndex = 43;
@@ -127,7 +127,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(73, 452);
+            this.label15.Location = new System.Drawing.Point(73, 476);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(82, 21);
             this.label15.TabIndex = 46;
@@ -137,7 +137,7 @@
             // 
             this.txtDiscount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiscount.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.txtDiscount.Location = new System.Drawing.Point(166, 452);
+            this.txtDiscount.Location = new System.Drawing.Point(166, 476);
             this.txtDiscount.Multiline = true;
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.Size = new System.Drawing.Size(258, 24);
@@ -149,7 +149,7 @@
             // 
             this.txtTotalSale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotalSale.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.txtTotalSale.Location = new System.Drawing.Point(166, 406);
+            this.txtTotalSale.Location = new System.Drawing.Point(166, 430);
             this.txtTotalSale.Multiline = true;
             this.txtTotalSale.Name = "txtTotalSale";
             this.txtTotalSale.ReadOnly = true;
@@ -161,7 +161,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(41, 283);
+            this.label11.Location = new System.Drawing.Point(41, 289);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(119, 21);
             this.label11.TabIndex = 42;
@@ -171,7 +171,7 @@
             // 
             this.txtStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStock.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.txtStock.Location = new System.Drawing.Point(165, 282);
+            this.txtStock.Location = new System.Drawing.Point(165, 288);
             this.txtStock.MaxLength = 50;
             this.txtStock.Multiline = true;
             this.txtStock.Name = "txtStock";
@@ -219,7 +219,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(74, 328);
+            this.label2.Location = new System.Drawing.Point(74, 337);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 21);
             this.label2.TabIndex = 36;
@@ -229,7 +229,7 @@
             // 
             this.txtSaleRate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSaleRate.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.txtSaleRate.Location = new System.Drawing.Point(166, 328);
+            this.txtSaleRate.Location = new System.Drawing.Point(166, 337);
             this.txtSaleRate.MaxLength = 20;
             this.txtSaleRate.Multiline = true;
             this.txtSaleRate.Name = "txtSaleRate";
@@ -288,7 +288,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(62, 502);
+            this.label12.Location = new System.Drawing.Point(62, 526);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(100, 21);
             this.label12.TabIndex = 33;
@@ -298,7 +298,7 @@
             // 
             this.txtNetAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNetAmount.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.txtNetAmount.Location = new System.Drawing.Point(165, 502);
+            this.txtNetAmount.Location = new System.Drawing.Point(165, 526);
             this.txtNetAmount.MaxLength = 20;
             this.txtNetAmount.Multiline = true;
             this.txtNetAmount.Name = "txtNetAmount";
@@ -332,7 +332,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(116, 367);
+            this.label10.Location = new System.Drawing.Point(116, 383);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(39, 21);
             this.label10.TabIndex = 27;
@@ -342,7 +342,7 @@
             // 
             this.txtPair.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPair.Font = new System.Drawing.Font("Times New Roman", 14.25F);
-            this.txtPair.Location = new System.Drawing.Point(165, 367);
+            this.txtPair.Location = new System.Drawing.Point(165, 383);
             this.txtPair.Multiline = true;
             this.txtPair.Name = "txtPair";
             this.txtPair.Size = new System.Drawing.Size(258, 24);

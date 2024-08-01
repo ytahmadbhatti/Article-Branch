@@ -3,8 +3,60 @@
   "WorkspaceRootPath": "F:\\Github\\Article-Branch\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|f:\\github\\article-branch\\report\\rptpurchasebetweendate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptpurchasebetweendate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|f:\\github\\article-branch\\report\\rptsaleinvbetweendate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptsaleinvbetweendate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\rptpurchasereturnbetweendate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptpurchasereturnbetweendate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\reports form\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:reports form\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\rptsalereturninv3inch.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptsalereturninv3inch.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\reportviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\reportviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\reportsoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:reportsoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\rptstockbetweendate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptstockbetweendate.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\datasets\\dsreport.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:datasets\\dsreport.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\reportviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\reportviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmsalereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmsalereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmsalereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmsalereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,14 +67,6 @@
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmsalereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmsalereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|f:\\github\\article-branch\\report\\rptsalereturninv3inch.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptsalereturninv3inch.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,16 +75,36 @@
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchasereturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:forms\\frmpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:crudoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\rptpurchase.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptpurchase.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:main\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\rptpurchasereturninv.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptpurchasereturninv.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\rptsaleinv3inch.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptsaleinv3inch.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|F:\\Github\\Article-Branch\\report\\rptcashbook.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{749F289E-57AB-4BD7-83AD-C0A6CBDD972A}|POS.csproj|solutionrelative:report\\rptcashbook.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,131 +114,319 @@
       "DocumentGroups": [
         {
           "DockedHeight": 1535,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "rptSaleInvBetweenDate.rpt",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptSaleInvBetweenDate.rpt",
+              "RelativeDocumentMoniker": "Report\\rptSaleInvBetweenDate.rpt",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\rptSaleInvBetweenDate.rpt",
+              "RelativeToolTip": "Report\\rptSaleInvBetweenDate.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-08-01T17:28:38.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReportViewer.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\ReportViewer.cs",
+              "RelativeDocumentMoniker": "Report\\ReportViewer.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\ReportViewer.cs",
+              "RelativeToolTip": "Report\\ReportViewer.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAewJAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T18:22:26.329Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "frmSaleReturn.cs [Design]",
-              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSaleReturn.cs",
-              "RelativeDocumentMoniker": "Forms\\frmSaleReturn.cs",
-              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSaleReturn.cs [Design]",
-              "RelativeToolTip": "Forms\\frmSaleReturn.cs [Design]",
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Main\\frmMain.cs",
+              "RelativeDocumentMoniker": "Main\\frmMain.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Main\\frmMain.cs",
+              "RelativeToolTip": "Main\\frmMain.cs",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAnwKMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T04:34:56.614Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-30T15:31:45.922Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmSaleReturn.cs",
-              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSaleReturn.cs",
-              "RelativeDocumentMoniker": "Forms\\frmSaleReturn.cs",
-              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSaleReturn.cs",
-              "RelativeToolTip": "Forms\\frmSaleReturn.cs",
-              "ViewState": "AQIAAHsCAAAAAAAAAAAswIwCAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T04:35:04.146Z",
+              "Title": "rptPurchaseBetweenDate.rpt",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptPurchaseBetweenDate.rpt",
+              "RelativeDocumentMoniker": "Report\\rptPurchaseBetweenDate.rpt",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\rptPurchaseBetweenDate.rpt",
+              "RelativeToolTip": "Report\\rptPurchaseBetweenDate.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-27T18:47:13.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmSale.cs [Design]",
-              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
-              "RelativeDocumentMoniker": "Forms\\frmSale.cs",
-              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs [Design]",
-              "RelativeToolTip": "Forms\\frmSale.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T04:59:54.833Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmSale.cs",
-              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
-              "RelativeDocumentMoniker": "Forms\\frmSale.cs",
-              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
-              "RelativeToolTip": "Forms\\frmSale.cs",
-              "ViewState": "AQIAAFQBAAAAAAAAAAAUwF4BAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T04:35:14.989Z",
+              "Title": "rptPurchaseReturnBetweenDate.rpt",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptPurchaseReturnBetweenDate.rpt",
+              "RelativeDocumentMoniker": "Report\\rptPurchaseReturnBetweenDate.rpt",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\rptPurchaseReturnBetweenDate.rpt",
+              "RelativeToolTip": "Report\\rptPurchaseReturnBetweenDate.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-27T18:47:16.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ReportForm.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Reports Form\\ReportForm.cs",
+              "RelativeDocumentMoniker": "Reports Form\\ReportForm.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Reports Form\\ReportForm.cs",
+              "RelativeToolTip": "Reports Form\\ReportForm.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAEwEQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T15:31:59.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "rptSaleReturnInv3Inch.rpt",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptSaleReturnInv3Inch.rpt",
               "RelativeDocumentMoniker": "Report\\rptSaleReturnInv3Inch.rpt",
               "ToolTip": "F:\\Github\\Article-Branch\\Report\\rptSaleReturnInv3Inch.rpt",
               "RelativeToolTip": "Report\\rptSaleReturnInv3Inch.rpt",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
-              "WhenOpened": "2024-07-27T07:48:31.646Z",
+              "WhenOpened": "2024-07-28T08:37:25.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "rptStockBetweenDate.rpt",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptStockBetweenDate.rpt",
+              "RelativeDocumentMoniker": "Report\\rptStockBetweenDate.rpt",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\rptStockBetweenDate.rpt",
+              "RelativeToolTip": "Report\\rptStockBetweenDate.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-30T15:41:37.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReportsOperation.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\ReportsOperation.cs",
+              "RelativeDocumentMoniker": "ReportsOperation.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\ReportsOperation.cs",
+              "RelativeToolTip": "ReportsOperation.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAIwFgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T18:22:00.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CrudOperation.cs",
-              "DocumentMoniker": "F:\\Github\\Article-Branch\\CrudOperation.cs",
-              "RelativeDocumentMoniker": "CrudOperation.cs",
-              "ToolTip": "F:\\Github\\Article-Branch\\CrudOperation.cs",
-              "RelativeToolTip": "CrudOperation.cs",
-              "ViewState": "AQIAACoCAAAAAAAAAAA3wEQCAAAJAAAA",
+              "DocumentIndex": 11,
+              "Title": "frmPurchase.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
+              "RelativeDocumentMoniker": "Forms\\frmPurchase.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
+              "RelativeToolTip": "Forms\\frmPurchase.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAcwIwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T04:35:15.005Z"
+              "WhenOpened": "2024-07-29T14:39:35.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "ReportViewer.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\ReportViewer.cs",
+              "RelativeDocumentMoniker": "Report\\ReportViewer.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\ReportViewer.cs [Design]",
+              "RelativeToolTip": "Report\\ReportViewer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T15:44:26.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dsReport.xsd",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\DataSets\\dsReport.xsd",
+              "RelativeDocumentMoniker": "DataSets\\dsReport.xsd",
+              "ToolTip": "F:\\Github\\Article-Branch\\DataSets\\dsReport.xsd",
+              "RelativeToolTip": "DataSets\\dsReport.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-07-30T15:37:49.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmSaleReturn.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSaleReturn.cs",
+              "RelativeDocumentMoniker": "Forms\\frmSaleReturn.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSaleReturn.cs [Design]",
+              "RelativeToolTip": "Forms\\frmSaleReturn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:39:58.54Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frmSale.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
+              "RelativeDocumentMoniker": "Forms\\frmSale.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
+              "RelativeToolTip": "Forms\\frmSale.cs",
+              "ViewState": "AQIAAC8BAAAAAAAAAAAnwEIBAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T18:22:00.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmSale.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs",
+              "RelativeDocumentMoniker": "Forms\\frmSale.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSale.cs [Design]",
+              "RelativeToolTip": "Forms\\frmSale.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T18:50:42.962Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmSaleReturn.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmSaleReturn.cs",
+              "RelativeDocumentMoniker": "Forms\\frmSaleReturn.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmSaleReturn.cs",
+              "RelativeToolTip": "Forms\\frmSaleReturn.cs",
+              "ViewState": "AQIAAHcBAAAAAAAAAAAnwH0BAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:34:32.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "frmPurchaseReturn.cs",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchaseReturn.cs",
               "RelativeDocumentMoniker": "Forms\\frmPurchaseReturn.cs",
               "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchaseReturn.cs",
               "RelativeToolTip": "Forms\\frmPurchaseReturn.cs",
-              "ViewState": "AQIAAK8BAAAAAAAAAAAowLQBAAANAAAA",
+              "ViewState": "AQIAAIMBAAAAAAAAAAAnwI4BAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T04:35:15.005Z"
+              "WhenOpened": "2024-07-29T14:39:07.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmPurchase.cs [Design]",
-              "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
-              "RelativeDocumentMoniker": "Forms\\frmPurchase.cs",
-              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs [Design]",
-              "RelativeToolTip": "Forms\\frmPurchase.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T05:31:28.052Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "frmPurchaseReturn.cs [Design]",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchaseReturn.cs",
               "RelativeDocumentMoniker": "Forms\\frmPurchaseReturn.cs",
               "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchaseReturn.cs [Design]",
               "RelativeToolTip": "Forms\\frmPurchaseReturn.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T05:53:34.208Z"
+              "WhenOpened": "2024-07-29T14:39:05.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmPurchase.cs",
+              "DocumentIndex": 18,
+              "Title": "frmPurchase.cs [Design]",
               "DocumentMoniker": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
               "RelativeDocumentMoniker": "Forms\\frmPurchase.cs",
-              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs",
-              "RelativeToolTip": "Forms\\frmPurchase.cs",
-              "ViewState": "AQIAAOsAAAAAAAAAAAAswPkAAAAdAAAA",
+              "ToolTip": "F:\\Github\\Article-Branch\\Forms\\frmPurchase.cs [Design]",
+              "RelativeToolTip": "Forms\\frmPurchase.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T04:35:15.021Z"
+              "WhenOpened": "2024-07-29T14:39:31.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CrudOperation.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\CrudOperation.cs",
+              "RelativeDocumentMoniker": "CrudOperation.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\CrudOperation.cs",
+              "RelativeToolTip": "CrudOperation.cs",
+              "ViewState": "AQIAAEUBAAAAAAAAAAAvwE8BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T15:21:58.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "rptPurchase.rpt",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptPurchase.rpt",
+              "RelativeDocumentMoniker": "Report\\rptPurchase.rpt",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\rptPurchase.rpt",
+              "RelativeToolTip": "Report\\rptPurchase.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-27T18:46:27.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Main\\frmMain.cs",
+              "RelativeDocumentMoniker": "Main\\frmMain.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Main\\frmMain.cs [Design]",
+              "RelativeToolTip": "Main\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T15:31:33.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Connection.cs",
+              "RelativeDocumentMoniker": "Connection.cs",
+              "ToolTip": "F:\\Github\\Article-Branch\\Connection.cs",
+              "RelativeToolTip": "Connection.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T06:47:48.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "rptPurchaseReturnInv.rpt",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptPurchaseReturnInv.rpt",
+              "RelativeDocumentMoniker": "Report\\rptPurchaseReturnInv.rpt",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\rptPurchaseReturnInv.rpt",
+              "RelativeToolTip": "Report\\rptPurchaseReturnInv.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-27T18:48:03.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "rptSaleInv3Inch.rpt",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptSaleInv3Inch.rpt",
+              "RelativeDocumentMoniker": "Report\\rptSaleInv3Inch.rpt",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\rptSaleInv3Inch.rpt",
+              "RelativeToolTip": "Report\\rptSaleInv3Inch.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-27T18:27:06.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "rptCashBook.rpt",
+              "DocumentMoniker": "F:\\Github\\Article-Branch\\Report\\rptCashBook.rpt",
+              "RelativeDocumentMoniker": "Report\\rptCashBook.rpt",
+              "ToolTip": "F:\\Github\\Article-Branch\\Report\\rptCashBook.rpt",
+              "RelativeToolTip": "Report\\rptCashBook.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-07-27T18:21:42.49Z"
             }
           ]
         },

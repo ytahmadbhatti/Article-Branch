@@ -334,6 +334,7 @@ namespace POS
             cmd.ExecuteNonQuery();
         }
 
+
         public void DeletePartyPaymentInv(SqlConnection Con, int PurchaseInv)
         {
             SqlCommand cmd = new SqlCommand("DeletePartyPaymentInv", Con);

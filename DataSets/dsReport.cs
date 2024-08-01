@@ -4,6 +4,10 @@
 
     partial class dsPurchase
     {
+        partial class CashBookDataTable
+        {
+        }
+
         partial class PurchaseInvDataTable
         {
         }

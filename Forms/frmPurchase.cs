@@ -136,7 +136,10 @@ namespace POS.Forms
                             cmd1.Parameters.Add("@InvId", SqlDbType.NVarChar).Value = txtPurchaseInv.Text;
                             cmd1.Parameters.Add("@Article", SqlDbType.NVarChar).Value = dgvPurchase.Rows[L].Cells[0].Value;             
                             cmd1.Parameters.Add("@Pair", SqlDbType.Int).Value = Convert.ToInt32(dgvPurchase.Rows[L].Cells[1].Value);
-                            cmd1.Parameters.Add("@NetAmount", SqlDbType.Decimal).Value =Convert.ToDecimal(dgvPurchase.Rows[L].Cells[5].Value);
+                            cmd1.Parameters.Add("@UnitPrice", SqlDbType.Decimal).Value = Convert.ToDecimal(dgvPurchase.Rows[L].Cells[2].Value);
+                            cmd1.Parameters.Add("@TotalAmount", SqlDbType.Decimal).Value = Convert.ToDecimal(dgvPurchase.Rows[L].Cells[3].Value);
+                            cmd1.Parameters.Add("@Discount", SqlDbType.Int).Value = Convert.ToInt32(dgvPurchase.Rows[L].Cells[4].Value);
+                            cmd1.Parameters.Add("@NetAmount", SqlDbType.Decimal).Value =Convert.ToDecimal(dgvPurchase.Rows[L].Cells[5].Value);   
                             cmd1.Parameters.Add("@DateTime", SqlDbType.DateTime).Value = DateTime.Now;
                             cmd1.Parameters.Add("@UserName", SqlDbType.VarChar).Value = txtSalesMan.Text;
 
@@ -295,6 +298,9 @@ namespace POS.Forms
                 if (!LoginInfo.UserType.Equals("User"))
                 {
                     crud.DeletePurchaseInv(Co, txtPurchaseInv.Text);
+
+                    crud.DeletePurchaseInv(Co, txtPurchaseInv.Text);
+                    crud.DeleteStock(Co, txtPurchaseInv.Text);
                     MessageBox.Show("Record Deleted Successfully.", "Success Message");
                     Initiatefields();
                 }

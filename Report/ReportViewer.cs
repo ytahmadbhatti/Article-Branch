@@ -1,18 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static POS.Login;
-using POS.FunctionClasses;
-using static System.Runtime.CompilerServices.RuntimeHelpers;
-using System.Xml;
-using POS.F1SearchForm;
 using POS.DataSets;
 using CrystalDecisions.CrystalReports.Engine;
 using System.IO;
@@ -65,6 +53,8 @@ namespace POS.Report
             rptOperations.PurchaseInvBetweenDateQuery(Co, ds, dtpFrom,dtpTo);
             rpt.Load(Path.Combine(Application.StartupPath, "Report", "rptPurchaseBetweenDate.rpt"));
             rpt.SummaryInfo.ReportTitle = "Purchase Invoice Between Date Time";
+            rpt.SummaryInfo.ReportComments = "Sadar Bazar Jahanian";
+            rpt.SummaryInfo.ReportAuthor = "From Date :" + dtpFrom + " To Date: " + dtpTo;
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             Co.Close();
@@ -79,6 +69,8 @@ namespace POS.Report
             rptOperations.SaleInvBetweenDateQuery(Co, ds, dtpFrom, dtpTo);
             rpt.Load(Path.Combine(Application.StartupPath, "Report", "rptSaleInvBetweenDate.rpt"));
             rpt.SummaryInfo.ReportTitle = "Sale Invoice Between Date Time";
+            rpt.SummaryInfo.ReportComments = "Sadar Bazar Jahanian";
+            rpt.SummaryInfo.ReportAuthor = "From Date :" + dtpFrom + " To Date: " + dtpTo;
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             Co.Close();
@@ -94,14 +86,13 @@ namespace POS.Report
             rptOperations.PurchaseReturnInvBetweenDateQuery(Co, ds, dtpFrom, dtpTo);
             rpt.Load(Path.Combine(Application.StartupPath, "Report", "rptPurchaseReturnBetweenDate.rpt"));
             rpt.SummaryInfo.ReportTitle = "Purchase Return Invoice Between Date Time";
+            rpt.SummaryInfo.ReportComments = "Sadar Bazar Jahanian";
+            rpt.SummaryInfo.ReportAuthor = "From Date :" + dtpFrom + " To Date: " + dtpTo;
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             Co.Close();
             this.ShowDialog();
         }
-
-
-
         public void SaleInvReport(string saleInv)
         {
             Connection cs = new Connection();
@@ -111,6 +102,52 @@ namespace POS.Report
             rptOperations.SaleInvQuery(Co, ds, saleInv);
             rpt.Load(Path.Combine(Application.StartupPath, "Report", "rptSaleInv3Inch.rpt"));
             rpt.SummaryInfo.ReportTitle = "Sale Invoice";
+            rpt.SetDataSource(ds);
+            crystalReportViewer1.ReportSource = rpt;
+            Co.Close();
+            this.ShowDialog();
+        }
+        public void SaleReturnInvReport(string saleReturnInv)
+        {
+            Connection cs = new Connection();
+            SqlConnection Co = cs.GenaricConnection();
+            ReportsOperation rptOperations = new ReportsOperation();
+            dsPurchase ds = new dsPurchase();
+            rptOperations.SaleReturnInvQuery(Co, ds, saleReturnInv);
+            rpt.Load(Path.Combine(Application.StartupPath, "Report", "rptSaleReturnInv3Inch.rpt"));
+            rpt.SummaryInfo.ReportTitle = "Sale Return Invoice";
+            rpt.SetDataSource(ds);
+            crystalReportViewer1.ReportSource = rpt;
+            Co.Close();
+            this.ShowDialog();
+        }
+        public void CashBookBetweenDateReport(DateTime dtpFrom, DateTime dtpTo)
+        {
+            Connection cs = new Connection();
+            SqlConnection Co = cs.GenaricConnection();
+            ReportsOperation rptOperations = new ReportsOperation();
+            dsPurchase ds = new dsPurchase();
+            rptOperations.CashBookBetweenDateQuery(Co, ds, dtpFrom, dtpTo);
+            rpt.Load(Path.Combine(Application.StartupPath, "Report", "rptCashBook.rpt"));
+            rpt.SummaryInfo.ReportTitle = "Cash Book";
+            rpt.SummaryInfo.ReportComments = "Sadar Bazar Jahanian";
+            rpt.SummaryInfo.ReportAuthor = "From Date :"+ dtpFrom + " To Date: " +dtpTo;
+            rpt.SetDataSource(ds);
+            crystalReportViewer1.ReportSource = rpt;
+            Co.Close();
+            this.ShowDialog();
+        }
+        public void StockBetweenDateReport(DateTime dtpFrom, DateTime dtpTo)
+        {
+            Connection cs = new Connection();
+            SqlConnection Co = cs.GenaricConnection();
+            ReportsOperation rptOperations = new ReportsOperation();
+            dsPurchase ds = new dsPurchase();
+            rptOperations.StockBetweenDateQuery(Co, ds, dtpFrom, dtpTo);
+            rpt.Load(Path.Combine(Application.StartupPath, "Report", "rptStockBetweenDate.rpt"));
+            rpt.SummaryInfo.ReportTitle = "Stock Report";
+            rpt.SummaryInfo.ReportComments = "Sadar Bazar Jahanian";
+            rpt.SummaryInfo.ReportAuthor = "From Date :" + dtpFrom + " To Date: " + dtpTo;
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             Co.Close();

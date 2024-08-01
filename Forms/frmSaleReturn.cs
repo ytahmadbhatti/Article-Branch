@@ -344,7 +344,7 @@ namespace POS.Forms
                         crud.InsertSaleReturnMaster(Co, txtSaleReturnInv.Text, DateTime.Now, txtSalesMan.Text, Convert.ToInt32(txtPartyCode.Text),
                                   txtPartyName.Text, Convert.ToInt64(txtAmount.Text), IsUpdate);
                     }
-
+                    crud.DeleteStock(Co, txtSaleReturnInv.Text);
                     for (int L = 0; L < dgvPurchaseReturn.Rows.Count; L++)
                     {
                         if (dgvPurchaseReturn.Rows[L].Cells[1].Value == null)
@@ -379,8 +379,11 @@ namespace POS.Forms
                             cmd1.Parameters.Add("@InvType", SqlDbType.VarChar).Value = "SR";
                             cmd1.Parameters.Add("@InvId", SqlDbType.NVarChar).Value = txtSaleReturnInv.Text;
                             cmd1.Parameters.Add("@Article", SqlDbType.NVarChar).Value = dgvPurchaseReturn.Rows[L].Cells[0].Value;
+                            cmd1.Parameters.Add("@UnitPrice", SqlDbType.Decimal).Value =Convert.ToDecimal(dgvPurchaseReturn.Rows[L].Cells[1].Value);
+                            cmd1.Parameters.Add("@Discount", SqlDbType.Int).Value =Convert.ToInt32(dgvPurchaseReturn.Rows[L].Cells[2].Value);
                             cmd1.Parameters.Add("@Pair", SqlDbType.Decimal).Value = dgvPurchaseReturn.Rows[L].Cells[3].Value;
                             cmd1.Parameters.Add("@NetAmount", SqlDbType.Float).Value = dgvPurchaseReturn.Rows[L].Cells[4].Value;
+                            cmd1.Parameters.Add("@TotalAmount", SqlDbType.Decimal).Value =Convert.ToDecimal(dgvPurchaseReturn.Rows[L].Cells[4].Value);
                             cmd1.Parameters.Add("@DateTime", SqlDbType.DateTime).Value = DateTime.Now;
                             cmd1.Parameters.Add("@UserName", SqlDbType.VarChar).Value = txtSalesMan.Text;
 
@@ -390,9 +393,17 @@ namespace POS.Forms
                             Co.Close();
                         }
                     }
-
+   
                     MessageBox.Show("Record Saved Successfully.", "Success Message");
-                 
+                    DialogResult result = MessageBox.Show("Do you want to print the report?", "Print Report", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        printReport();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Printing canceled.", "Canceled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                     Co.Close();
                     initize();
                 }
@@ -568,6 +579,7 @@ namespace POS.Forms
                 if (!LoginInfo.UserType.Equals("User"))
                 {
                     crud.DeletePurchaseReturnInv(Co, txtSaleReturnInv.Text);
+                    crud.DeleteStock(Co, txtSaleReturnInv.Text);
                     MessageBox.Show("Record Deleted Successfully.", "Success Message");
                     initize();
                 }
@@ -642,7 +654,7 @@ namespace POS.Forms
             try
             {
                 ReportViewer frmRpt = new ReportViewer();
-                frmRpt.SaleInvReport(txtSaleReturnInv.Text);
+                frmRpt.SaleReturnInvReport(txtSaleReturnInv.Text);
                 this.Close();
             }
             catch (Exception ex)
